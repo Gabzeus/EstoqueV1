@@ -10,26 +10,19 @@ using System.Windows.Forms;
 
 namespace EstoqueV1
 {
-    public partial class Form1 : Form
+    public partial class NewEstoq : Form
     {
-        public Form1()
+        public NewEstoq()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form2 ViewCad = new Form2();
-            ViewCad.ShowDialog();
-
-        }
-
-        private void lbl3_Click(object sender, EventArgs e)
+        private void NewEstoq_Load(object sender, EventArgs e)
         {
 
         }

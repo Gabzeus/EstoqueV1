@@ -94,6 +94,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApplicationDbContext.cs" />
     <Compile Include="CatCadastro.cs">
       <SubType>Form</SubType>
@@ -102,6 +108,12 @@
       <DependentUpon>CatCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Categoria.cs" />
+    <Compile Include="ControladorUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControladorUser.Designer.cs">
+      <DependentUpon>ControladorUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,16 +126,31 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewEstoq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEstoq.Designer.cs">
+      <DependentUpon>NewEstoq.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CatCadastro.resx">
       <DependentUpon>CatCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControladorUser.resx">
+      <DependentUpon>ControladorUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEstoq.resx">
+      <DependentUpon>NewEstoq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -22,8 +22,46 @@ namespace EstoqueV1
 
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void BtnNewDadosUser_Click(object sender, EventArgs e)
         {
+            ControladorUser UserAdmin = new ControladorUser();
+            UserAdmin.ShowDialog();
+        }
+
+        private void BtnCategoriaNova_Click(object sender, EventArgs e)
+        {
+            CatCadastro CadTela = new CatCadastro();
+            CadTela.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            NewEstoq cadEstoq = new NewEstoq();
+            cadEstoq.ShowDialog();
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void BtnExcluirUser_Click(object sender, EventArgs e)
+        {
+            ControladorUser UserAdmin = new ControladorUser();
+            UserAdmin.ShowDialog();
+        }
+
+        private void BtnExcluirEstoq_Click(object sender, EventArgs e)
+        {
+            ControladorUser UserAdmin = new ControladorUser();
+            UserAdmin.ShowDialog();
+
+        }
+
+        private void BtnAddUser_Click(object sender, EventArgs e)
+        {
+            AddUser addconta = new AddUser();
+            addconta.ShowDialog();
 
         }
     }

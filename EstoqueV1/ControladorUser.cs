@@ -10,26 +10,19 @@ using System.Windows.Forms;
 
 namespace EstoqueV1
 {
-    public partial class Form1 : Form
+    public partial class ControladorUser : Form
     {
-        public Form1()
+        public ControladorUser()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form2 ViewCad = new Form2();
-            ViewCad.ShowDialog();
-
-        }
-
-        private void lbl3_Click(object sender, EventArgs e)
+        private void ControladorUser_Load(object sender, EventArgs e)
         {
 
         }
