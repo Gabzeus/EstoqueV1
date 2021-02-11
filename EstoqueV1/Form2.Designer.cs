@@ -35,6 +35,7 @@ namespace EstoqueV1
             this.btnEditar = new System.Windows.Forms.Button();
             this.TabMenu = new System.Windows.Forms.TabControl();
             this.TabCadItem = new System.Windows.Forms.TabPage();
+            this.btnSaidaItem = new System.Windows.Forms.Button();
             this.BtnAtualizarCad = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnExcluirCad = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@ namespace EstoqueV1
             this.BtnCheckQtd = new System.Windows.Forms.Button();
             this.BtnAttGrafico = new System.Windows.Forms.Button();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).BeginInit();
             this.TabMenu.SuspendLayout();
             this.TabCadItem.SuspendLayout();
@@ -109,7 +109,7 @@ namespace EstoqueV1
             // 
             // TabCadItem
             // 
-            this.TabCadItem.Controls.Add(this.button1);
+            this.TabCadItem.Controls.Add(this.btnSaidaItem);
             this.TabCadItem.Controls.Add(this.BtnAtualizarCad);
             this.TabCadItem.Controls.Add(this.button2);
             this.TabCadItem.Controls.Add(this.BtnExcluirCad);
@@ -123,6 +123,15 @@ namespace EstoqueV1
             this.TabCadItem.TabIndex = 0;
             this.TabCadItem.Text = "Cadastro item";
             this.TabCadItem.UseVisualStyleBackColor = true;
+            // 
+            // btnSaidaItem
+            // 
+            this.btnSaidaItem.Location = new System.Drawing.Point(18, 73);
+            this.btnSaidaItem.Name = "btnSaidaItem";
+            this.btnSaidaItem.Size = new System.Drawing.Size(131, 23);
+            this.btnSaidaItem.TabIndex = 7;
+            this.btnSaidaItem.Text = "&Saida de item";
+            this.btnSaidaItem.UseVisualStyleBackColor = true;
             // 
             // BtnAtualizarCad
             // 
@@ -319,15 +328,6 @@ namespace EstoqueV1
             // 
             this.programBindingSource.DataSource = typeof(EstoqueV1.Program);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(18, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "&Saida de item";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,6 +376,6 @@ namespace EstoqueV1
         private System.Windows.Forms.Button BtnCheckQtd;
         private System.Windows.Forms.Button BtnAttGrafico;
         private System.Windows.Forms.Button BtnAddUser;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSaidaItem;
     }
 }
