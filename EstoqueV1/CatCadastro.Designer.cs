@@ -71,13 +71,13 @@ namespace EstoqueV1
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(27, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 1);
+            this.panel1.Size = new System.Drawing.Size(374, 48);
             this.panel1.TabIndex = 4;
             // 
             // btnSalvar
             // 
             this.btnSalvar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSalvar.Location = new System.Drawing.Point(79, 92);
+            this.btnSalvar.Location = new System.Drawing.Point(95, 139);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 1;
@@ -87,7 +87,7 @@ namespace EstoqueV1
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(192, 92);
+            this.btnCancelar.Location = new System.Drawing.Point(240, 139);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 2;
@@ -123,7 +123,7 @@ namespace EstoqueV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 127);
+            this.ClientSize = new System.Drawing.Size(544, 208);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCancelar);

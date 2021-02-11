@@ -41,7 +41,7 @@ namespace EstoqueV1
             // 
             // btnCriar
             // 
-            this.btnCriar.Location = new System.Drawing.Point(243, 129);
+            this.btnCriar.Location = new System.Drawing.Point(228, 129);
             this.btnCriar.Name = "btnCriar";
             this.btnCriar.Size = new System.Drawing.Size(95, 23);
             this.btnCriar.TabIndex = 4;
@@ -50,7 +50,7 @@ namespace EstoqueV1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(265, 68);
+            this.button2.Location = new System.Drawing.Point(248, 67);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -60,14 +60,15 @@ namespace EstoqueV1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 84);
+            this.textBox1.Location = new System.Drawing.Point(86, 84);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(151, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(108, 51);
+            this.textBox2.Location = new System.Drawing.Point(86, 51);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(151, 20);
             this.textBox2.TabIndex = 0;
@@ -76,7 +77,7 @@ namespace EstoqueV1
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(34, 51);
+            this.lbl1.Location = new System.Drawing.Point(12, 49);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(68, 20);
             this.lbl1.TabIndex = 4;
@@ -86,7 +87,7 @@ namespace EstoqueV1
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(34, 82);
+            this.lbl2.Location = new System.Drawing.Point(12, 82);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(60, 20);
             this.lbl2.TabIndex = 5;
@@ -96,7 +97,7 @@ namespace EstoqueV1
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(70, 132);
+            this.lbl3.Location = new System.Drawing.Point(48, 132);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(155, 20);
             this.lbl3.TabIndex = 6;
@@ -107,7 +108,7 @@ namespace EstoqueV1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(244, 172);
+            this.label1.Location = new System.Drawing.Point(231, 163);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 20);
             this.label1.TabIndex = 7;
