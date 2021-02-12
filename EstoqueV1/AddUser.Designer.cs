@@ -67,7 +67,7 @@ namespace EstoqueV1
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(250, 199);
+            this.btnCancelar.Location = new System.Drawing.Point(373, 139);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 21;
@@ -77,7 +77,7 @@ namespace EstoqueV1
             // btnSalvar
             // 
             this.btnSalvar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSalvar.Location = new System.Drawing.Point(144, 199);
+            this.btnSalvar.Location = new System.Drawing.Point(373, 103);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 18;
@@ -209,6 +209,7 @@ namespace EstoqueV1
             this.Controls.Add(this.TxtNomeUser);
             this.Controls.Add(this.lblNomeUser);
             this.Name = "AddUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Novo usuario";
             this.Load += new System.EventHandler(this.AddUser_Load);
             this.ResumeLayout(false);

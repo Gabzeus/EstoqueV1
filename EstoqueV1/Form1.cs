@@ -26,7 +26,7 @@ namespace EstoqueV1
         {
             try
             {
-                if (txtUser.Text == "Admin" & txtSenha.Text == "Admin")
+                if (txtUser.Text ==""  & txtSenha.Text == "")
                 { MessageBox.Show("Bem vindo");
                   
                     this.Hide();
@@ -45,7 +45,7 @@ namespace EstoqueV1
             }
 
            
-
+             
         }
 
         private void lbl3_Click(object sender, EventArgs e)

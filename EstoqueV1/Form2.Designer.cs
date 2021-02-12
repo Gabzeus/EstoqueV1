@@ -82,7 +82,7 @@ namespace EstoqueV1
             this.ColumQtd});
             this.DtgvDadosCad.Location = new System.Drawing.Point(171, 73);
             this.DtgvDadosCad.Name = "DtgvDadosCad";
-            this.DtgvDadosCad.Size = new System.Drawing.Size(429, 241);
+            this.DtgvDadosCad.Size = new System.Drawing.Size(409, 241);
             this.DtgvDadosCad.TabIndex = 0;
             this.DtgvDadosCad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -114,12 +114,13 @@ namespace EstoqueV1
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(18, 176);
+            this.btnEditar.Location = new System.Drawing.Point(18, 175);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(131, 23);
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "&Editar ";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // TabMenu
             // 
@@ -130,7 +131,7 @@ namespace EstoqueV1
             this.TabMenu.Location = new System.Drawing.Point(12, 12);
             this.TabMenu.Name = "TabMenu";
             this.TabMenu.SelectedIndex = 0;
-            this.TabMenu.Size = new System.Drawing.Size(638, 405);
+            this.TabMenu.Size = new System.Drawing.Size(984, 573);
             this.TabMenu.TabIndex = 4;
             // 
             // TabCadItem
@@ -145,7 +146,7 @@ namespace EstoqueV1
             this.TabCadItem.Location = new System.Drawing.Point(4, 22);
             this.TabCadItem.Name = "TabCadItem";
             this.TabCadItem.Padding = new System.Windows.Forms.Padding(3);
-            this.TabCadItem.Size = new System.Drawing.Size(630, 379);
+            this.TabCadItem.Size = new System.Drawing.Size(976, 547);
             this.TabCadItem.TabIndex = 0;
             this.TabCadItem.Text = "Cadastro item";
             this.TabCadItem.UseVisualStyleBackColor = true;
@@ -158,6 +159,7 @@ namespace EstoqueV1
             this.btnSaidaItem.TabIndex = 7;
             this.btnSaidaItem.Text = "&Saida de item";
             this.btnSaidaItem.UseVisualStyleBackColor = true;
+            this.btnSaidaItem.Click += new System.EventHandler(this.btnSaidaItem_Click);
             // 
             // BtnAtualizarCad
             // 
@@ -185,6 +187,7 @@ namespace EstoqueV1
             this.BtnExcluirCad.TabIndex = 4;
             this.BtnExcluirCad.Text = "&Excluir";
             this.BtnExcluirCad.UseVisualStyleBackColor = true;
+            this.BtnExcluirCad.Click += new System.EventHandler(this.BtnExcluirCad_Click_1);
             // 
             // tabPage2
             // 
@@ -197,7 +200,7 @@ namespace EstoqueV1
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(630, 379);
+            this.tabPage2.Size = new System.Drawing.Size(976, 547);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Edição de Estoque";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -285,7 +288,7 @@ namespace EstoqueV1
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(630, 379);
+            this.tabPage1.Size = new System.Drawing.Size(976, 547);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Configuração de conta";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -337,7 +340,7 @@ namespace EstoqueV1
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(630, 379);
+            this.tabPage3.Size = new System.Drawing.Size(976, 547);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "Rotinas";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -377,9 +380,10 @@ namespace EstoqueV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 416);
+            this.ClientSize = new System.Drawing.Size(1008, 681);
             this.Controls.Add(this.TabMenu);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).EndInit();
             this.TabMenu.ResumeLayout(false);

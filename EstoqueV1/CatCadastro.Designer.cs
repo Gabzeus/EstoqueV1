@@ -39,14 +39,17 @@ namespace EstoqueV1
             this.label1 = new System.Windows.Forms.Label();
             this.DtgvDadosCad = new System.Windows.Forms.DataGridView();
             this.ColumNomeCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumCateg = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumQtdCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumValorCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtValor
             // 
-            this.TxtValor.Location = new System.Drawing.Point(313, 36);
+            this.TxtValor.Location = new System.Drawing.Point(414, 36);
             this.TxtValor.Name = "TxtValor";
             this.TxtValor.ReadOnly = true;
             this.TxtValor.Size = new System.Drawing.Size(32, 20);
@@ -63,7 +66,7 @@ namespace EstoqueV1
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(314, 20);
+            this.lblId.Location = new System.Drawing.Point(411, 20);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(31, 13);
             this.lblId.TabIndex = 3;
@@ -92,7 +95,7 @@ namespace EstoqueV1
             // 
             // txtQtd
             // 
-            this.txtQtd.Location = new System.Drawing.Point(200, 36);
+            this.txtQtd.Location = new System.Drawing.Point(297, 36);
             this.txtQtd.Name = "txtQtd";
             this.txtQtd.Size = new System.Drawing.Size(36, 20);
             this.txtQtd.TabIndex = 2;
@@ -110,7 +113,7 @@ namespace EstoqueV1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(188, 20);
+            this.label1.Location = new System.Drawing.Point(285, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 6;
@@ -121,17 +124,23 @@ namespace EstoqueV1
             this.DtgvDadosCad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtgvDadosCad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumNomeCad,
+            this.ColumCateg,
             this.ColumQtdCad,
             this.ColumValorCad});
             this.DtgvDadosCad.Location = new System.Drawing.Point(27, 62);
             this.DtgvDadosCad.Name = "DtgvDadosCad";
-            this.DtgvDadosCad.Size = new System.Drawing.Size(357, 241);
+            this.DtgvDadosCad.Size = new System.Drawing.Size(444, 241);
             this.DtgvDadosCad.TabIndex = 7;
             // 
             // ColumNomeCad
             // 
             this.ColumNomeCad.HeaderText = "Nome";
             this.ColumNomeCad.Name = "ColumNomeCad";
+            // 
+            // ColumCateg
+            // 
+            this.ColumCateg.HeaderText = "Categoria";
+            this.ColumCateg.Name = "ColumCateg";
             // 
             // ColumQtdCad
             // 
@@ -143,11 +152,29 @@ namespace EstoqueV1
             this.ColumValorCad.HeaderText = "Valor";
             this.ColumValorCad.Name = "ColumValorCad";
             // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(156, 20);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
+            this.lblCategoria.TabIndex = 8;
+            this.lblCategoria.Text = "Categoria";
+            // 
+            // txtCategoria
+            // 
+            this.txtCategoria.Location = new System.Drawing.Point(159, 36);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(100, 20);
+            this.txtCategoria.TabIndex = 9;
+            // 
             // CatCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 358);
+            this.ClientSize = new System.Drawing.Size(478, 358);
+            this.Controls.Add(this.txtCategoria);
+            this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.DtgvDadosCad);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtQtd);
@@ -178,7 +205,10 @@ namespace EstoqueV1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView DtgvDadosCad;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumNomeCad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumCateg;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumQtdCad;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumValorCad;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.TextBox txtCategoria;
     }
 }

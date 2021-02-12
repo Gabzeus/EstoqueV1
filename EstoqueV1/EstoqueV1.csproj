@@ -108,11 +108,23 @@
       <DependentUpon>CatCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Categoria.cs" />
+    <Compile Include="ControladorSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControladorSaida.Designer.cs">
+      <DependentUpon>ControladorSaida.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControladorUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ControladorUser.Designer.cs">
       <DependentUpon>ControladorUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarExcluir.Designer.cs">
+      <DependentUpon>EditarExcluir.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -140,8 +152,14 @@
     <EmbeddedResource Include="CatCadastro.resx">
       <DependentUpon>CatCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ControladorSaida.resx">
+      <DependentUpon>ControladorSaida.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControladorUser.resx">
       <DependentUpon>ControladorUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarExcluir.resx">
+      <DependentUpon>EditarExcluir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

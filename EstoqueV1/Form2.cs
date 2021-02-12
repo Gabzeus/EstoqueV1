@@ -64,5 +64,24 @@ namespace EstoqueV1
             addconta.ShowDialog();
 
         }
+
+        private void btnSaidaItem_Click(object sender, EventArgs e)
+        {
+            ControladorSaida controlSaida = new ControladorSaida();
+            controlSaida.ShowDialog();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            EditarExcluir edit = new EditarExcluir();
+            edit.ShowDialog();
+
+        }
+
+        private void BtnExcluirCad_Click_1(object sender, EventArgs e)
+        {
+            EditarExcluir edit = new EditarExcluir();
+            edit.ShowDialog();
+        }
     }
 }
