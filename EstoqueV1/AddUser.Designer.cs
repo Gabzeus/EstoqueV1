@@ -63,6 +63,7 @@ namespace EstoqueV1
             this.txtbSenha.PasswordChar = '*';
             this.txtbSenha.Size = new System.Drawing.Size(181, 20);
             this.txtbSenha.TabIndex = 20;
+            this.txtbSenha.TextChanged += new System.EventHandler(this.txtbSenha_TextChanged);
             // 
             // btnCancelar
             // 
@@ -100,12 +101,12 @@ namespace EstoqueV1
             this.txtSenhaConf.PasswordChar = '*';
             this.txtSenhaConf.Size = new System.Drawing.Size(181, 20);
             this.txtSenhaConf.TabIndex = 19;
+            this.txtSenhaConf.TextChanged += new System.EventHandler(this.txtSenhaConf_TextChanged);
             // 
             // TxtNomeUser
             // 
             this.TxtNomeUser.Location = new System.Drawing.Point(144, 46);
             this.TxtNomeUser.Name = "TxtNomeUser";
-            this.TxtNomeUser.ReadOnly = true;
             this.TxtNomeUser.Size = new System.Drawing.Size(181, 20);
             this.TxtNomeUser.TabIndex = 16;
             this.TxtNomeUser.TabStop = false;

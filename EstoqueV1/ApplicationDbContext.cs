@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EstoqueV1
 {
-    class ApplicationDbContext:DbContext 
+    class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext() : base(nameOrConnectionString: "controle_estoque")
         { }
