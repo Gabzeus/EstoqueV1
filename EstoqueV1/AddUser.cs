@@ -36,5 +36,10 @@ namespace EstoqueV1
         {
 
         }
+
+        private void AddUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

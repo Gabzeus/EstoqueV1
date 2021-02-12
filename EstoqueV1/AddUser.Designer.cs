@@ -38,8 +38,12 @@ namespace EstoqueV1
             this.TxtNomeUser = new System.Windows.Forms.TextBox();
             this.lblNomeUser = new System.Windows.Forms.Label();
             this.lblConfirme = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblConfEmail = new System.Windows.Forms.Label();
+            this.txtConfEmail = new System.Windows.Forms.TextBox();
+            this.cboxFunção = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblSenha
@@ -63,7 +67,7 @@ namespace EstoqueV1
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(250, 155);
+            this.btnCancelar.Location = new System.Drawing.Point(250, 199);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 21;
@@ -73,7 +77,7 @@ namespace EstoqueV1
             // btnSalvar
             // 
             this.btnSalvar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSalvar.Location = new System.Drawing.Point(144, 155);
+            this.btnSalvar.Location = new System.Drawing.Point(144, 199);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 18;
@@ -125,18 +129,6 @@ namespace EstoqueV1
             this.lblConfirme.TabIndex = 25;
             this.lblConfirme.Text = "Confirme a senha:";
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Administrador",
-            "Gerente",
-            "Funcionario"});
-            this.checkedListBox1.Location = new System.Drawing.Point(331, 48);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 49);
-            this.checkedListBox1.TabIndex = 27;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -146,13 +138,65 @@ namespace EstoqueV1
             this.label1.TabIndex = 28;
             this.label1.Text = "Função";
             // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(57, 139);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(81, 13);
+            this.lblEmail.TabIndex = 30;
+            this.lblEmail.Text = "Digite um email:";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(144, 136);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '*';
+            this.txtEmail.Size = new System.Drawing.Size(181, 20);
+            this.txtEmail.TabIndex = 29;
+            // 
+            // lblConfEmail
+            // 
+            this.lblConfEmail.AutoSize = true;
+            this.lblConfEmail.Location = new System.Drawing.Point(57, 165);
+            this.lblConfEmail.Name = "lblConfEmail";
+            this.lblConfEmail.Size = new System.Drawing.Size(87, 13);
+            this.lblConfEmail.TabIndex = 32;
+            this.lblConfEmail.Text = "Confirme o email:";
+            // 
+            // txtConfEmail
+            // 
+            this.txtConfEmail.Location = new System.Drawing.Point(144, 162);
+            this.txtConfEmail.Name = "txtConfEmail";
+            this.txtConfEmail.PasswordChar = '*';
+            this.txtConfEmail.Size = new System.Drawing.Size(181, 20);
+            this.txtConfEmail.TabIndex = 31;
+            // 
+            // cboxFunção
+            // 
+            this.cboxFunção.AutoCompleteCustomSource.AddRange(new string[] {
+            "Administrador",
+            "Supervisor",
+            "Usuario"});
+            this.cboxFunção.FormattingEnabled = true;
+            this.cboxFunção.Items.AddRange(new object[] {
+            "Teste"});
+            this.cboxFunção.Location = new System.Drawing.Point(358, 44);
+            this.cboxFunção.Name = "cboxFunção";
+            this.cboxFunção.Size = new System.Drawing.Size(102, 21);
+            this.cboxFunção.TabIndex = 33;
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 190);
+            this.ClientSize = new System.Drawing.Size(460, 234);
+            this.Controls.Add(this.cboxFunção);
+            this.Controls.Add(this.lblConfEmail);
+            this.Controls.Add(this.txtConfEmail);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.lblConfirme);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.txtbSenha);
@@ -164,6 +208,7 @@ namespace EstoqueV1
             this.Controls.Add(this.lblNomeUser);
             this.Name = "AddUser";
             this.Text = "Novo usuario";
+            this.Load += new System.EventHandler(this.AddUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,7 +225,11 @@ namespace EstoqueV1
         private System.Windows.Forms.TextBox TxtNomeUser;
         private System.Windows.Forms.Label lblNomeUser;
         private System.Windows.Forms.Label lblConfirme;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label lblConfEmail;
+        private System.Windows.Forms.TextBox txtConfEmail;
+        private System.Windows.Forms.ComboBox cboxFunção;
     }
 }
