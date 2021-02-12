@@ -28,11 +28,12 @@ namespace EstoqueV1
             {
                 if (txtUser.Text == "Admin" & txtSenha.Text == "Admin")
                 { MessageBox.Show("Bem vindo");
-                    Form2 ViewCad = new Form2();
+                  
                     this.Hide();
-                    ViewCad.ShowDialog();
-                    
-                    
+                    Form2 ViewCad = new Form2();
+                    ViewCad.Closed += (s, args) => this.Close();
+                    ViewCad.Show();
+
                 }
                 else
                 { MessageBox.Show("Tente novamente"); }
