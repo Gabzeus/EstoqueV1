@@ -49,36 +49,46 @@ namespace EstoqueV1
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.BtnAddUser = new System.Windows.Forms.Button();
             this.BtnExcluirUser = new System.Windows.Forms.Button();
-            this.DtgvDadosUser = new System.Windows.Forms.DataGridView();
             this.BtnNewDadosUser = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.BtnSaldo = new System.Windows.Forms.Button();
             this.BtnCheckQtd = new System.Windows.Forms.Button();
             this.BtnAttGrafico = new System.Windows.Forms.Button();
+            this.ColumId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumQtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DtgvDadosUser = new System.Windows.Forms.DataGridView();
+            this.ColumIdEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumTipoEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumNomeEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).BeginInit();
             this.TabMenu.SuspendLayout();
             this.TabCadItem.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).BeginInit();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).BeginInit();
             this.SuspendLayout();
             // 
             // DtgvDadosCad
             // 
             this.DtgvDadosCad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgvDadosCad.Location = new System.Drawing.Point(171, 34);
+            this.DtgvDadosCad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumId,
+            this.ColumNome,
+            this.ColumQtd});
+            this.DtgvDadosCad.Location = new System.Drawing.Point(171, 73);
             this.DtgvDadosCad.Name = "DtgvDadosCad";
-            this.DtgvDadosCad.Size = new System.Drawing.Size(357, 241);
+            this.DtgvDadosCad.Size = new System.Drawing.Size(429, 241);
             this.DtgvDadosCad.TabIndex = 0;
             this.DtgvDadosCad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // BtnCategoriaNova
             // 
-            this.BtnCategoriaNova.Location = new System.Drawing.Point(18, 34);
+            this.BtnCategoriaNova.Location = new System.Drawing.Point(18, 73);
             this.BtnCategoriaNova.Name = "BtnCategoriaNova";
             this.BtnCategoriaNova.Size = new System.Drawing.Size(131, 23);
             this.BtnCategoriaNova.TabIndex = 2;
@@ -88,7 +98,7 @@ namespace EstoqueV1
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(18, 120);
+            this.btnEditar.Location = new System.Drawing.Point(18, 176);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(131, 23);
             this.btnEditar.TabIndex = 3;
@@ -104,7 +114,7 @@ namespace EstoqueV1
             this.TabMenu.Location = new System.Drawing.Point(12, 12);
             this.TabMenu.Name = "TabMenu";
             this.TabMenu.SelectedIndex = 0;
-            this.TabMenu.Size = new System.Drawing.Size(564, 359);
+            this.TabMenu.Size = new System.Drawing.Size(638, 405);
             this.TabMenu.TabIndex = 4;
             // 
             // TabCadItem
@@ -119,14 +129,14 @@ namespace EstoqueV1
             this.TabCadItem.Location = new System.Drawing.Point(4, 22);
             this.TabCadItem.Name = "TabCadItem";
             this.TabCadItem.Padding = new System.Windows.Forms.Padding(3);
-            this.TabCadItem.Size = new System.Drawing.Size(556, 333);
+            this.TabCadItem.Size = new System.Drawing.Size(630, 379);
             this.TabCadItem.TabIndex = 0;
             this.TabCadItem.Text = "Cadastro item";
             this.TabCadItem.UseVisualStyleBackColor = true;
             // 
             // btnSaidaItem
             // 
-            this.btnSaidaItem.Location = new System.Drawing.Point(18, 73);
+            this.btnSaidaItem.Location = new System.Drawing.Point(18, 128);
             this.btnSaidaItem.Name = "btnSaidaItem";
             this.btnSaidaItem.Size = new System.Drawing.Size(131, 23);
             this.btnSaidaItem.TabIndex = 7;
@@ -135,7 +145,7 @@ namespace EstoqueV1
             // 
             // BtnAtualizarCad
             // 
-            this.BtnAtualizarCad.Location = new System.Drawing.Point(18, 217);
+            this.BtnAtualizarCad.Location = new System.Drawing.Point(18, 291);
             this.BtnAtualizarCad.Name = "BtnAtualizarCad";
             this.BtnAtualizarCad.Size = new System.Drawing.Size(131, 23);
             this.BtnAtualizarCad.TabIndex = 6;
@@ -144,7 +154,7 @@ namespace EstoqueV1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(450, 281);
+            this.button2.Location = new System.Drawing.Point(522, 334);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 23);
             this.button2.TabIndex = 5;
@@ -153,7 +163,7 @@ namespace EstoqueV1
             // 
             // BtnExcluirCad
             // 
-            this.BtnExcluirCad.Location = new System.Drawing.Point(18, 166);
+            this.BtnExcluirCad.Location = new System.Drawing.Point(18, 231);
             this.BtnExcluirCad.Name = "BtnExcluirCad";
             this.BtnExcluirCad.Size = new System.Drawing.Size(131, 23);
             this.BtnExcluirCad.TabIndex = 4;
@@ -171,7 +181,7 @@ namespace EstoqueV1
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(556, 333);
+            this.tabPage2.Size = new System.Drawing.Size(630, 379);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Edição de Estoque";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -207,6 +217,10 @@ namespace EstoqueV1
             // DtgvDadosEstoque
             // 
             this.DtgvDadosEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgvDadosEstoque.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumIdEstoq,
+            this.ColumTipoEstoq,
+            this.ColumNomeEstoq});
             this.DtgvDadosEstoque.Location = new System.Drawing.Point(171, 34);
             this.DtgvDadosEstoque.Name = "DtgvDadosEstoque";
             this.DtgvDadosEstoque.Size = new System.Drawing.Size(357, 241);
@@ -240,7 +254,7 @@ namespace EstoqueV1
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(556, 333);
+            this.tabPage1.Size = new System.Drawing.Size(630, 379);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Configuração de conta";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -265,15 +279,6 @@ namespace EstoqueV1
             this.BtnExcluirUser.UseVisualStyleBackColor = true;
             this.BtnExcluirUser.Click += new System.EventHandler(this.BtnExcluirUser_Click);
             // 
-            // DtgvDadosUser
-            // 
-            this.DtgvDadosUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgvDadosUser.Location = new System.Drawing.Point(171, 34);
-            this.DtgvDadosUser.Name = "DtgvDadosUser";
-            this.DtgvDadosUser.Size = new System.Drawing.Size(357, 241);
-            this.DtgvDadosUser.TabIndex = 6;
-            this.DtgvDadosUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
-            // 
             // BtnNewDadosUser
             // 
             this.BtnNewDadosUser.Location = new System.Drawing.Point(18, 56);
@@ -292,7 +297,7 @@ namespace EstoqueV1
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(556, 333);
+            this.tabPage3.Size = new System.Drawing.Size(630, 379);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "Rotinas";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -324,15 +329,55 @@ namespace EstoqueV1
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
             // 
+            // ColumId
+            // 
+            this.ColumId.Frozen = true;
+            this.ColumId.HeaderText = "Id";
+            this.ColumId.Name = "ColumId";
+            // 
+            // ColumNome
+            // 
+            this.ColumNome.HeaderText = "Nome";
+            this.ColumNome.Name = "ColumNome";
+            // 
+            // ColumQtd
+            // 
+            this.ColumQtd.HeaderText = "Quantidade";
+            this.ColumQtd.Name = "ColumQtd";
+            // 
             // programBindingSource
             // 
             this.programBindingSource.DataSource = typeof(EstoqueV1.Program);
+            // 
+            // DtgvDadosUser
+            // 
+            this.DtgvDadosUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgvDadosUser.Location = new System.Drawing.Point(171, 34);
+            this.DtgvDadosUser.Name = "DtgvDadosUser";
+            this.DtgvDadosUser.Size = new System.Drawing.Size(357, 241);
+            this.DtgvDadosUser.TabIndex = 6;
+            this.DtgvDadosUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            // 
+            // ColumIdEstoq
+            // 
+            this.ColumIdEstoq.HeaderText = "Id";
+            this.ColumIdEstoq.Name = "ColumIdEstoq";
+            // 
+            // ColumTipoEstoq
+            // 
+            this.ColumTipoEstoq.HeaderText = "Tipo de estoque";
+            this.ColumTipoEstoq.Name = "ColumTipoEstoq";
+            // 
+            // ColumNomeEstoq
+            // 
+            this.ColumNomeEstoq.HeaderText = "Nome do estoque";
+            this.ColumNomeEstoq.Name = "ColumNomeEstoq";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 383);
+            this.ClientSize = new System.Drawing.Size(654, 416);
             this.Controls.Add(this.TabMenu);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -342,9 +387,9 @@ namespace EstoqueV1
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).EndInit();
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -369,7 +414,6 @@ namespace EstoqueV1
         private System.Windows.Forms.Button BtnAttEstoq;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button BtnExcluirUser;
-        private System.Windows.Forms.DataGridView DtgvDadosUser;
         private System.Windows.Forms.Button BtnNewDadosUser;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button BtnSaldo;
@@ -377,5 +421,12 @@ namespace EstoqueV1
         private System.Windows.Forms.Button BtnAttGrafico;
         private System.Windows.Forms.Button BtnAddUser;
         private System.Windows.Forms.Button btnSaidaItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumQtd;
+        private System.Windows.Forms.DataGridView DtgvDadosUser;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumIdEstoq;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumTipoEstoq;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumNomeEstoq;
     }
 }

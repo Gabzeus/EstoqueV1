@@ -180,7 +180,9 @@ namespace EstoqueV1
             "Usuario"});
             this.cboxFunção.FormattingEnabled = true;
             this.cboxFunção.Items.AddRange(new object[] {
-            "Teste"});
+            "Administrador",
+            "Supervisor",
+            "Usuario"});
             this.cboxFunção.Location = new System.Drawing.Point(358, 44);
             this.cboxFunção.Name = "cboxFunção";
             this.cboxFunção.Size = new System.Drawing.Size(102, 21);
