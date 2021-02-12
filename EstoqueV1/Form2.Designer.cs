@@ -31,6 +31,9 @@ namespace EstoqueV1
         {
             this.components = new System.ComponentModel.Container();
             this.DtgvDadosCad = new System.Windows.Forms.DataGridView();
+            this.ColumId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumQtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnCategoriaNova = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.TabMenu = new System.Windows.Forms.TabControl();
@@ -44,33 +47,30 @@ namespace EstoqueV1
             this.button3 = new System.Windows.Forms.Button();
             this.BtnExcluirEstoq = new System.Windows.Forms.Button();
             this.DtgvDadosEstoque = new System.Windows.Forms.DataGridView();
+            this.ColumIdEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumTipoEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumNomeEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnEditEstoq = new System.Windows.Forms.Button();
             this.BtnEstoqNew = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.BtnAddUser = new System.Windows.Forms.Button();
             this.BtnExcluirUser = new System.Windows.Forms.Button();
+            this.DtgvDadosUser = new System.Windows.Forms.DataGridView();
             this.BtnNewDadosUser = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.BtnSaldo = new System.Windows.Forms.Button();
             this.BtnCheckQtd = new System.Windows.Forms.Button();
             this.BtnAttGrafico = new System.Windows.Forms.Button();
-            this.ColumId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumQtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DtgvDadosUser = new System.Windows.Forms.DataGridView();
-            this.ColumIdEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumTipoEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumNomeEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).BeginInit();
             this.TabMenu.SuspendLayout();
             this.TabCadItem.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).BeginInit();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).BeginInit();
             this.SuspendLayout();
             // 
             // DtgvDadosCad
@@ -85,6 +85,22 @@ namespace EstoqueV1
             this.DtgvDadosCad.Size = new System.Drawing.Size(429, 241);
             this.DtgvDadosCad.TabIndex = 0;
             this.DtgvDadosCad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ColumId
+            // 
+            this.ColumId.Frozen = true;
+            this.ColumId.HeaderText = "Id";
+            this.ColumId.Name = "ColumId";
+            // 
+            // ColumNome
+            // 
+            this.ColumNome.HeaderText = "Nome";
+            this.ColumNome.Name = "ColumNome";
+            // 
+            // ColumQtd
+            // 
+            this.ColumQtd.HeaderText = "Quantidade";
+            this.ColumQtd.Name = "ColumQtd";
             // 
             // BtnCategoriaNova
             // 
@@ -188,7 +204,7 @@ namespace EstoqueV1
             // 
             // BtnAttEstoq
             // 
-            this.BtnAttEstoq.Location = new System.Drawing.Point(18, 221);
+            this.BtnAttEstoq.Location = new System.Drawing.Point(18, 283);
             this.BtnAttEstoq.Name = "BtnAttEstoq";
             this.BtnAttEstoq.Size = new System.Drawing.Size(131, 26);
             this.BtnAttEstoq.TabIndex = 11;
@@ -197,7 +213,7 @@ namespace EstoqueV1
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(450, 281);
+            this.button3.Location = new System.Drawing.Point(507, 330);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(78, 23);
             this.button3.TabIndex = 10;
@@ -206,7 +222,7 @@ namespace EstoqueV1
             // 
             // BtnExcluirEstoq
             // 
-            this.BtnExcluirEstoq.Location = new System.Drawing.Point(18, 166);
+            this.BtnExcluirEstoq.Location = new System.Drawing.Point(18, 221);
             this.BtnExcluirEstoq.Name = "BtnExcluirEstoq";
             this.BtnExcluirEstoq.Size = new System.Drawing.Size(131, 23);
             this.BtnExcluirEstoq.TabIndex = 9;
@@ -221,14 +237,29 @@ namespace EstoqueV1
             this.ColumIdEstoq,
             this.ColumTipoEstoq,
             this.ColumNomeEstoq});
-            this.DtgvDadosEstoque.Location = new System.Drawing.Point(171, 34);
+            this.DtgvDadosEstoque.Location = new System.Drawing.Point(175, 68);
             this.DtgvDadosEstoque.Name = "DtgvDadosEstoque";
-            this.DtgvDadosEstoque.Size = new System.Drawing.Size(357, 241);
+            this.DtgvDadosEstoque.Size = new System.Drawing.Size(430, 241);
             this.DtgvDadosEstoque.TabIndex = 6;
+            // 
+            // ColumIdEstoq
+            // 
+            this.ColumIdEstoq.HeaderText = "Id";
+            this.ColumIdEstoq.Name = "ColumIdEstoq";
+            // 
+            // ColumTipoEstoq
+            // 
+            this.ColumTipoEstoq.HeaderText = "Tipo de estoque";
+            this.ColumTipoEstoq.Name = "ColumTipoEstoq";
+            // 
+            // ColumNomeEstoq
+            // 
+            this.ColumNomeEstoq.HeaderText = "Nome do estoque";
+            this.ColumNomeEstoq.Name = "ColumNomeEstoq";
             // 
             // BtnEditEstoq
             // 
-            this.BtnEditEstoq.Location = new System.Drawing.Point(18, 111);
+            this.BtnEditEstoq.Location = new System.Drawing.Point(18, 155);
             this.BtnEditEstoq.Name = "BtnEditEstoq";
             this.BtnEditEstoq.Size = new System.Drawing.Size(131, 23);
             this.BtnEditEstoq.TabIndex = 8;
@@ -237,7 +268,7 @@ namespace EstoqueV1
             // 
             // BtnEstoqNew
             // 
-            this.BtnEstoqNew.Location = new System.Drawing.Point(18, 56);
+            this.BtnEstoqNew.Location = new System.Drawing.Point(18, 68);
             this.BtnEstoqNew.Name = "BtnEstoqNew";
             this.BtnEstoqNew.Size = new System.Drawing.Size(131, 23);
             this.BtnEstoqNew.TabIndex = 7;
@@ -278,6 +309,15 @@ namespace EstoqueV1
             this.BtnExcluirUser.Text = "&Excluir";
             this.BtnExcluirUser.UseVisualStyleBackColor = true;
             this.BtnExcluirUser.Click += new System.EventHandler(this.BtnExcluirUser_Click);
+            // 
+            // DtgvDadosUser
+            // 
+            this.DtgvDadosUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgvDadosUser.Location = new System.Drawing.Point(171, 34);
+            this.DtgvDadosUser.Name = "DtgvDadosUser";
+            this.DtgvDadosUser.Size = new System.Drawing.Size(357, 241);
+            this.DtgvDadosUser.TabIndex = 6;
+            this.DtgvDadosUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // BtnNewDadosUser
             // 
@@ -329,49 +369,9 @@ namespace EstoqueV1
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
             // 
-            // ColumId
-            // 
-            this.ColumId.Frozen = true;
-            this.ColumId.HeaderText = "Id";
-            this.ColumId.Name = "ColumId";
-            // 
-            // ColumNome
-            // 
-            this.ColumNome.HeaderText = "Nome";
-            this.ColumNome.Name = "ColumNome";
-            // 
-            // ColumQtd
-            // 
-            this.ColumQtd.HeaderText = "Quantidade";
-            this.ColumQtd.Name = "ColumQtd";
-            // 
             // programBindingSource
             // 
             this.programBindingSource.DataSource = typeof(EstoqueV1.Program);
-            // 
-            // DtgvDadosUser
-            // 
-            this.DtgvDadosUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgvDadosUser.Location = new System.Drawing.Point(171, 34);
-            this.DtgvDadosUser.Name = "DtgvDadosUser";
-            this.DtgvDadosUser.Size = new System.Drawing.Size(357, 241);
-            this.DtgvDadosUser.TabIndex = 6;
-            this.DtgvDadosUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
-            // 
-            // ColumIdEstoq
-            // 
-            this.ColumIdEstoq.HeaderText = "Id";
-            this.ColumIdEstoq.Name = "ColumIdEstoq";
-            // 
-            // ColumTipoEstoq
-            // 
-            this.ColumTipoEstoq.HeaderText = "Tipo de estoque";
-            this.ColumTipoEstoq.Name = "ColumTipoEstoq";
-            // 
-            // ColumNomeEstoq
-            // 
-            this.ColumNomeEstoq.HeaderText = "Nome do estoque";
-            this.ColumNomeEstoq.Name = "ColumNomeEstoq";
             // 
             // Form2
             // 
@@ -387,9 +387,9 @@ namespace EstoqueV1
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).EndInit();
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).EndInit();
             this.ResumeLayout(false);
 
         }

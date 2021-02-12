@@ -38,6 +38,9 @@ namespace EstoqueV1
             this.lblNome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DtgvDadosCad = new System.Windows.Forms.DataGridView();
+            this.ColumNomeCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumQtdCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumValorCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,10 +119,29 @@ namespace EstoqueV1
             // DtgvDadosCad
             // 
             this.DtgvDadosCad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgvDadosCad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumNomeCad,
+            this.ColumQtdCad,
+            this.ColumValorCad});
             this.DtgvDadosCad.Location = new System.Drawing.Point(27, 62);
             this.DtgvDadosCad.Name = "DtgvDadosCad";
             this.DtgvDadosCad.Size = new System.Drawing.Size(357, 241);
             this.DtgvDadosCad.TabIndex = 7;
+            // 
+            // ColumNomeCad
+            // 
+            this.ColumNomeCad.HeaderText = "Nome";
+            this.ColumNomeCad.Name = "ColumNomeCad";
+            // 
+            // ColumQtdCad
+            // 
+            this.ColumQtdCad.HeaderText = "Quantidade";
+            this.ColumQtdCad.Name = "ColumQtdCad";
+            // 
+            // ColumValorCad
+            // 
+            this.ColumValorCad.HeaderText = "Valor";
+            this.ColumValorCad.Name = "ColumValorCad";
             // 
             // CatCadastro
             // 
@@ -155,5 +177,8 @@ namespace EstoqueV1
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView DtgvDadosCad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumNomeCad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumQtdCad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumValorCad;
     }
 }
