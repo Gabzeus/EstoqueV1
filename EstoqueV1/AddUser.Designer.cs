@@ -56,6 +56,7 @@ namespace EstoqueV1
             // 
             this.txtbSenha.Location = new System.Drawing.Point(144, 77);
             this.txtbSenha.Name = "txtbSenha";
+            this.txtbSenha.PasswordChar = '*';
             this.txtbSenha.Size = new System.Drawing.Size(181, 20);
             this.txtbSenha.TabIndex = 20;
             // 
@@ -92,6 +93,7 @@ namespace EstoqueV1
             // 
             this.txtSenhaConf.Location = new System.Drawing.Point(144, 110);
             this.txtSenhaConf.Name = "txtSenhaConf";
+            this.txtSenhaConf.PasswordChar = '*';
             this.txtSenhaConf.Size = new System.Drawing.Size(181, 20);
             this.txtSenhaConf.TabIndex = 19;
             // 

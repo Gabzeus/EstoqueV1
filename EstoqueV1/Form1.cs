@@ -24,14 +24,34 @@ namespace EstoqueV1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 ViewCad = new Form2();
-            ViewCad.ShowDialog();
+            try
+            {
+                if (txtUser.Text == "Admin" & txtSenha.Text == "Admin")
+                { MessageBox.Show("Bem vindo");
+                    Form2 ViewCad = new Form2();
+                    ViewCad.ShowDialog();
+                }
+                else
+                { MessageBox.Show("Tente novamente"); }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+           
 
         }
 
         private void lbl3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+        
         }
     }
 }
