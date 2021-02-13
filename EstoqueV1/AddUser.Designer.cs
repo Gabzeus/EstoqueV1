@@ -84,6 +84,7 @@ namespace EstoqueV1
             this.btnSalvar.TabIndex = 18;
             this.btnSalvar.Text = "&Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblId
             // 
@@ -133,7 +134,7 @@ namespace EstoqueV1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(355, 29);
+            this.label1.Location = new System.Drawing.Point(343, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 28;
@@ -184,7 +185,7 @@ namespace EstoqueV1
             "Administrador",
             "Supervisor",
             "Usuario"});
-            this.cboxFunção.Location = new System.Drawing.Point(358, 44);
+            this.cboxFunção.Location = new System.Drawing.Point(346, 45);
             this.cboxFunção.Name = "cboxFunção";
             this.cboxFunção.Size = new System.Drawing.Size(102, 21);
             this.cboxFunção.TabIndex = 33;

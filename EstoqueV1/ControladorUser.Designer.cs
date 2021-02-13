@@ -30,81 +30,137 @@ namespace EstoqueV1
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEditSenha = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.btnSalvarSenhar = new System.Windows.Forms.Button();
+            this.txtEditEmail = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
+            this.txtConfEditEmail = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtConfEditSenha = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnSalvarEmail = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 75);
+            this.label1.Location = new System.Drawing.Point(28, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 30;
-            this.label1.Text = "Senha:";
+            this.label1.Text = "Alterar senha:";
             // 
-            // textBox1
+            // txtEditSenha
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(172, 20);
-            this.textBox1.TabIndex = 28;
+            this.txtEditSenha.Location = new System.Drawing.Point(118, 78);
+            this.txtEditSenha.Name = "txtEditSenha";
+            this.txtEditSenha.PasswordChar = '*';
+            this.txtEditSenha.Size = new System.Drawing.Size(172, 20);
+            this.txtEditSenha.TabIndex = 28;
             // 
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(204, 116);
+            this.btnCancelar.Location = new System.Drawing.Point(215, 153);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 29;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
+            // btnSalvarSenhar
             // 
-            this.btnSalvar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSalvar.Location = new System.Drawing.Point(91, 116);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 26;
-            this.btnSalvar.Text = "&Entrar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnSalvarSenhar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSalvarSenhar.Location = new System.Drawing.Point(19, 153);
+            this.btnSalvarSenhar.Name = "btnSalvarSenhar";
+            this.btnSalvarSenhar.Size = new System.Drawing.Size(91, 23);
+            this.btnSalvarSenhar.TabIndex = 26;
+            this.btnSalvarSenhar.Text = "&Alterar senha";
+            this.btnSalvarSenhar.UseVisualStyleBackColor = true;
+            this.btnSalvarSenhar.Click += new System.EventHandler(this.btnSalvarSenha_Click);
             // 
-            // txtNome
+            // txtEditEmail
             // 
-            this.txtNome.Location = new System.Drawing.Point(78, 42);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(172, 20);
-            this.txtNome.TabIndex = 27;
+            this.txtEditEmail.Location = new System.Drawing.Point(118, 6);
+            this.txtEditEmail.Name = "txtEditEmail";
+            this.txtEditEmail.Size = new System.Drawing.Size(172, 20);
+            this.txtEditEmail.TabIndex = 27;
+            this.txtEditEmail.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(31, 45);
+            this.lblNome.Location = new System.Drawing.Point(28, 9);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(36, 13);
+            this.lblNome.Size = new System.Drawing.Size(70, 13);
             this.lblNome.TabIndex = 25;
-            this.lblNome.Text = "Login:";
+            this.lblNome.Text = "Alterar e-mail:";
+            this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
+            // 
+            // txtConfEditEmail
+            // 
+            this.txtConfEditEmail.Location = new System.Drawing.Point(118, 42);
+            this.txtConfEditEmail.Name = "txtConfEditEmail";
+            this.txtConfEditEmail.Size = new System.Drawing.Size(172, 20);
+            this.txtConfEditEmail.TabIndex = 31;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Confirmar e-mail:";
+            // 
+            // txtConfEditSenha
+            // 
+            this.txtConfEditSenha.Location = new System.Drawing.Point(118, 114);
+            this.txtConfEditSenha.Name = "txtConfEditSenha";
+            this.txtConfEditSenha.PasswordChar = '*';
+            this.txtConfEditSenha.Size = new System.Drawing.Size(172, 20);
+            this.txtConfEditSenha.TabIndex = 33;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Confirmar senha:";
+            // 
+            // btnSalvarEmail
+            // 
+            this.btnSalvarEmail.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSalvarEmail.Location = new System.Drawing.Point(118, 153);
+            this.btnSalvarEmail.Name = "btnSalvarEmail";
+            this.btnSalvarEmail.Size = new System.Drawing.Size(91, 23);
+            this.btnSalvarEmail.TabIndex = 35;
+            this.btnSalvarEmail.Text = "&Alterar e-mail";
+            this.btnSalvarEmail.UseVisualStyleBackColor = true;
+            this.btnSalvarEmail.Click += new System.EventHandler(this.btnSalvarEmail_Click);
             // 
             // ControladorUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 169);
+            this.ClientSize = new System.Drawing.Size(314, 188);
+            this.Controls.Add(this.btnSalvarEmail);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtConfEditSenha);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtConfEditEmail);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEditSenha);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.btnSalvarSenhar);
+            this.Controls.Add(this.txtEditEmail);
             this.Controls.Add(this.lblNome);
             this.Name = "ControladorUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Login mestre";
+            this.Text = "Alterar dados da conta";
             this.Load += new System.EventHandler(this.ControladorUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -114,10 +170,15 @@ namespace EstoqueV1
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEditSenha;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Button btnSalvarSenhar;
+        private System.Windows.Forms.TextBox txtEditEmail;
         private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.TextBox txtConfEditEmail;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtConfEditSenha;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnSalvarEmail;
     }
 }

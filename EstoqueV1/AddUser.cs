@@ -40,12 +40,27 @@ namespace EstoqueV1
 
         private void AddUser_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void txtbSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenhaConf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
             if (txtbSenha.Text == txtSenhaConf.Text & txtEmail.Text == txtConfEmail.Text)
             {
 
-                string addUser = "INSERT INTO Contas (Nome, Senha, Email) VALUES ('" + TxtNomeUser.Text + "', '" + txtbSenha + "', '" + txtEmail.Text + "')";
+                string addUser = "INSERT INTO Contas (Login, Senha, Email) VALUES ('" + TxtNomeUser.Text + "', '" + txtbSenha.Text + "', '" + txtEmail.Text + "')";
 
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\fabio.pastorio\OneDrive - SENAC - SC\Documentos\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Usuário\Desktop\Trabalhos - Mestrado\PROGRAMAÇÃO\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
 
                 SqlCommand cmd = new SqlCommand(addUser, conn);
                 cmd.CommandType = CommandType.Text;
@@ -67,19 +82,9 @@ namespace EstoqueV1
 
             }
             else
-            {       
+            {
                 MessageBox.Show("Os dados dos campos de confirmação (senha/e-mail) não correspondem com a primeira digitação. Tente novamente.");
             }
-        }
-
-        private void txtbSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSenhaConf_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
