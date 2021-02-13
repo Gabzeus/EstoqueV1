@@ -189,6 +189,7 @@ namespace EstoqueV1
             this.cboxFunção.Name = "cboxFunção";
             this.cboxFunção.Size = new System.Drawing.Size(102, 21);
             this.cboxFunção.TabIndex = 33;
+            this.cboxFunção.SelectedIndexChanged += new System.EventHandler(this.cboxFunção_SelectedIndexChanged);
             // 
             // AddUser
             // 

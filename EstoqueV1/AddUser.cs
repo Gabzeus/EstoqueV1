@@ -58,7 +58,7 @@ namespace EstoqueV1
             if (txtbSenha.Text == txtSenhaConf.Text & txtEmail.Text == txtConfEmail.Text)
             {
 
-                string addUser = "INSERT INTO Contas (Login, Senha, Email) VALUES ('" + TxtNomeUser.Text + "', '" + txtbSenha.Text + "', '" + txtEmail.Text + "')";
+                string addUser = "INSERT INTO Contas (Login, Senha, Email, Função) VALUES ('" + TxtNomeUser.Text + "', '" + txtbSenha.Text + "', '" + txtEmail.Text + "', '" + cboxFunção.Text + "')";
 
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Usuário\Desktop\Trabalhos - Mestrado\PROGRAMAÇÃO\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -85,6 +85,11 @@ namespace EstoqueV1
             {
                 MessageBox.Show("Os dados dos campos de confirmação (senha/e-mail) não correspondem com a primeira digitação. Tente novamente.");
             }
+        }
+
+        private void cboxFunção_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
