@@ -53,8 +53,7 @@ namespace EstoqueV1
 
         private void BtnExcluirEstoq_Click(object sender, EventArgs e)
         {
-            ExcluirItensAdm del = new ExcluirItensAdm();
-            del.ShowDialog();
+          
 
         }
 
@@ -90,6 +89,11 @@ namespace EstoqueV1
         }
 
         private void BtnEditEstoq_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAttEstoq_Click(object sender, EventArgs e)
         {
 
         }
