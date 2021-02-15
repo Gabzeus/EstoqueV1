@@ -51,6 +51,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dates, Version=1.0.6.0, Culture=neutral, PublicKeyToken=7225397de634a467, processorArchitecture=MSIL">
+      <HintPath>..\packages\Date.1.0.6\lib\net45\Dates.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -62,6 +65,9 @@
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Npgsql, Version=5.0.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\packages\Npgsql.5.0.3\lib\netstandard2.0\Npgsql.dll</HintPath>
@@ -122,11 +128,16 @@
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
     <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="CatCadastro.cs">
+    <Compile Include="Db_EstoquesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_EstoquesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProdutoCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CatCadastro.Designer.cs">
-      <DependentUpon>CatCadastro.cs</DependentUpon>
+    <Compile Include="ProdutoCadastro.Designer.cs">
+      <DependentUpon>ProdutoCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Categoria.cs" />
     <Compile Include="ControladorSaida.cs">
@@ -175,8 +186,8 @@
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CatCadastro.resx">
-      <DependentUpon>CatCadastro.cs</DependentUpon>
+    <EmbeddedResource Include="ProdutoCadastro.resx">
+      <DependentUpon>ProdutoCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControladorSaida.resx">
       <DependentUpon>ControladorSaida.cs</DependentUpon>
@@ -215,6 +226,17 @@
     </None>
     <None Include="Db_EstoquesDataSet.xss">
       <DependentUpon>Db_EstoquesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Db_EstoquesDataSet1.xsc">
+      <DependentUpon>Db_EstoquesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Db_EstoquesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_EstoquesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_EstoquesDataSet1.xss">
+      <DependentUpon>Db_EstoquesDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Form1.datasource" />

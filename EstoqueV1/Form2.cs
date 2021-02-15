@@ -30,7 +30,7 @@ namespace EstoqueV1
 
         private void BtnCategoriaNova_Click(object sender, EventArgs e)
         {
-            CatCadastro CadTela = new CatCadastro();
+            ProdutoCadastro CadTela = new ProdutoCadastro();
             CadTela.ShowDialog();
         }
 
