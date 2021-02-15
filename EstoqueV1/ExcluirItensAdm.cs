@@ -16,5 +16,16 @@ namespace EstoqueV1
         {
             InitializeComponent();
         }
+
+        private void ExcluirItensAdm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            if(txtLogin)
+            { }
+        }
     }
 }

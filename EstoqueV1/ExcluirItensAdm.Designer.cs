@@ -42,14 +42,14 @@ namespace EstoqueV1
             this.txtSenha.Location = new System.Drawing.Point(65, 81);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(183, 20);
-            this.txtSenha.TabIndex = 0;
+            this.txtSenha.TabIndex = 1;
             // 
             // txtLogin
             // 
             this.txtLogin.Location = new System.Drawing.Point(65, 49);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(183, 20);
-            this.txtLogin.TabIndex = 1;
+            this.txtLogin.TabIndex = 0;
             // 
             // lblSenha
             // 
@@ -71,20 +71,23 @@ namespace EstoqueV1
             // 
             // btnConfirmar
             // 
+            this.btnConfirmar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnConfirmar.Location = new System.Drawing.Point(173, 128);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirmar.TabIndex = 4;
-            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.TabIndex = 2;
+            this.btnConfirmar.Text = "&Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // BtnCancelar
             // 
+            this.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnCancelar.Location = new System.Drawing.Point(65, 128);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.BtnCancelar.TabIndex = 5;
-            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.TabIndex = 3;
+            this.BtnCancelar.Text = "&Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
             // 
             // ExcluirItensAdm
@@ -99,7 +102,8 @@ namespace EstoqueV1
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.txtSenha);
             this.Name = "ExcluirItensAdm";
-            this.Text = "ExcluirItensAdm";
+            this.Text = "Entrar";
+            this.Load += new System.EventHandler(this.ExcluirItensAdm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
