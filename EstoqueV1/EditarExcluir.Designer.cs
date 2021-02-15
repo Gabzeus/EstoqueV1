@@ -30,6 +30,10 @@ namespace EstoqueV1
         private void InitializeComponent()
         {
             this.DtgvDadosEstoque = new System.Windows.Forms.DataGridView();
+            this.ColumNomePRod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumCateg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumQtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.lblCategoria = new System.Windows.Forms.Label();
@@ -37,10 +41,6 @@ namespace EstoqueV1
             this.TxtId = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.ColumNomePRod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumCateg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumQtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtQtd = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblValor = new System.Windows.Forms.Label();
@@ -61,71 +61,7 @@ namespace EstoqueV1
             this.DtgvDadosEstoque.Name = "DtgvDadosEstoque";
             this.DtgvDadosEstoque.Size = new System.Drawing.Size(443, 41);
             this.DtgvDadosEstoque.TabIndex = 25;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(23, 125);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 22;
-            this.btnCancelar.Text = "&Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSalvar.Location = new System.Drawing.Point(391, 125);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 19;
-            this.btnSalvar.Text = "&Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(181, 36);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
-            this.lblCategoria.TabIndex = 23;
-            this.lblCategoria.Text = "Categoria";
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(76, 52);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(86, 20);
-            this.txtNome.TabIndex = 20;
-            // 
-            // TxtId
-            // 
-            this.TxtId.Location = new System.Drawing.Point(168, 52);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.ReadOnly = true;
-            this.TxtId.Size = new System.Drawing.Size(93, 20);
-            this.TxtId.TabIndex = 17;
-            this.TxtId.TabStop = false;
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(73, 36);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(89, 13);
-            this.lblNome.TabIndex = 18;
-            this.lblNome.Text = "Nome do produto";
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnExcluir.Location = new System.Drawing.Point(472, 96);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 26;
-            this.btnExcluir.Text = "&Exlcuir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            this.DtgvDadosEstoque.TabStop = false;
             // 
             // ColumNomePRod
             // 
@@ -147,12 +83,77 @@ namespace EstoqueV1
             this.ColumValor.HeaderText = "Valor";
             this.ColumValor.Name = "ColumValor";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.Location = new System.Drawing.Point(23, 125);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.Text = "&Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSalvar.Location = new System.Drawing.Point(391, 125);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 6;
+            this.btnSalvar.Text = "&Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Location = new System.Drawing.Point(181, 36);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
+            this.lblCategoria.TabIndex = 23;
+            this.lblCategoria.Text = "Categoria";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(76, 52);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(86, 20);
+            this.txtNome.TabIndex = 0;
+            // 
+            // TxtId
+            // 
+            this.TxtId.Location = new System.Drawing.Point(184, 52);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.ReadOnly = true;
+            this.TxtId.Size = new System.Drawing.Size(93, 20);
+            this.TxtId.TabIndex = 1;
+            this.TxtId.TabStop = false;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(73, 36);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(89, 13);
+            this.lblNome.TabIndex = 18;
+            this.lblNome.Text = "Nome do produto";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnExcluir.Location = new System.Drawing.Point(472, 96);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 5;
+            this.btnExcluir.Text = "&Exlcuir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // txtQtd
             // 
             this.txtQtd.Location = new System.Drawing.Point(301, 52);
             this.txtQtd.Name = "txtQtd";
             this.txtQtd.Size = new System.Drawing.Size(33, 20);
-            this.txtQtd.TabIndex = 27;
+            this.txtQtd.TabIndex = 2;
             this.txtQtd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox1
@@ -160,7 +161,7 @@ namespace EstoqueV1
             this.textBox1.Location = new System.Drawing.Point(391, 52);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(34, 20);
-            this.textBox1.TabIndex = 28;
+            this.textBox1.TabIndex = 3;
             // 
             // lblValor
             // 
@@ -174,7 +175,7 @@ namespace EstoqueV1
             // lblQtd
             // 
             this.lblQtd.AutoSize = true;
-            this.lblQtd.Location = new System.Drawing.Point(284, 36);
+            this.lblQtd.Location = new System.Drawing.Point(298, 36);
             this.lblQtd.Name = "lblQtd";
             this.lblQtd.Size = new System.Drawing.Size(62, 13);
             this.lblQtd.TabIndex = 30;
@@ -186,7 +187,7 @@ namespace EstoqueV1
             this.btnEditar.Location = new System.Drawing.Point(472, 49);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 31;
+            this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "&Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 

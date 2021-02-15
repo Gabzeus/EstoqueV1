@@ -29,7 +29,6 @@ namespace EstoqueV1
         /// </summary>
         private void InitializeComponent()
         {
-            this.TxtValor = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -44,24 +43,16 @@ namespace EstoqueV1
             this.ColumValorCad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).BeginInit();
             this.SuspendLayout();
-            // 
-            // TxtValor
-            // 
-            this.TxtValor.Location = new System.Drawing.Point(414, 36);
-            this.TxtValor.Name = "TxtValor";
-            this.TxtValor.ReadOnly = true;
-            this.TxtValor.Size = new System.Drawing.Size(32, 20);
-            this.TxtValor.TabIndex = 0;
-            this.TxtValor.TabStop = false;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(27, 36);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(104, 20);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 0;
             // 
             // lblId
             // 
@@ -79,7 +70,7 @@ namespace EstoqueV1
             this.btnSalvar.Location = new System.Drawing.Point(309, 309);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 1;
+            this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "&Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
@@ -89,7 +80,7 @@ namespace EstoqueV1
             this.btnCancelar.Location = new System.Drawing.Point(12, 309);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -131,6 +122,7 @@ namespace EstoqueV1
             this.DtgvDadosCad.Name = "DtgvDadosCad";
             this.DtgvDadosCad.Size = new System.Drawing.Size(444, 241);
             this.DtgvDadosCad.TabIndex = 7;
+            this.DtgvDadosCad.TabStop = false;
             // 
             // ColumNomeCad
             // 
@@ -166,13 +158,21 @@ namespace EstoqueV1
             this.txtCategoria.Location = new System.Drawing.Point(159, 36);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(100, 20);
-            this.txtCategoria.TabIndex = 9;
+            this.txtCategoria.TabIndex = 1;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(414, 36);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(28, 20);
+            this.txtId.TabIndex = 3;
             // 
             // CatCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 358);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.DtgvDadosCad);
@@ -182,7 +182,6 @@ namespace EstoqueV1
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.TxtValor);
             this.Controls.Add(this.lblNome);
             this.Name = "CatCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -195,7 +194,6 @@ namespace EstoqueV1
         }
 
         #endregion
-        private System.Windows.Forms.TextBox TxtValor;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Button btnSalvar;
@@ -210,5 +208,6 @@ namespace EstoqueV1
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumValorCad;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.TextBox txtCategoria;
+        private System.Windows.Forms.TextBox txtId;
     }
 }

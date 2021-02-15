@@ -53,6 +53,7 @@ namespace EstoqueV1
             this.DtgvDadosCad.Name = "DtgvDadosCad";
             this.DtgvDadosCad.Size = new System.Drawing.Size(357, 241);
             this.DtgvDadosCad.TabIndex = 10;
+            this.DtgvDadosCad.TabStop = false;
             // 
             // ColumNomeCad
             // 
@@ -75,7 +76,7 @@ namespace EstoqueV1
             this.btnCancelar.Location = new System.Drawing.Point(43, 321);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -85,7 +86,7 @@ namespace EstoqueV1
             this.btnSalvar.Location = new System.Drawing.Point(340, 321);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 8;
+            this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "&Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
@@ -103,14 +104,14 @@ namespace EstoqueV1
             this.txtQtd.Location = new System.Drawing.Point(231, 40);
             this.txtQtd.Name = "txtQtd";
             this.txtQtd.Size = new System.Drawing.Size(36, 20);
-            this.txtQtd.TabIndex = 14;
+            this.txtQtd.TabIndex = 1;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(58, 40);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(104, 20);
-            this.txtNome.TabIndex = 13;
+            this.txtNome.TabIndex = 0;
             // 
             // lblNome
             // 

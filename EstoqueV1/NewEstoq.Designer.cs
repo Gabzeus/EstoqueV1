@@ -35,12 +35,13 @@ namespace EstoqueV1
             this.btnSalvar = new System.Windows.Forms.Button();
             this.lblId = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.TxtId = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.DtgvDadosEstoque = new System.Windows.Forms.DataGridView();
             this.ColumIdEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumTipoEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumNomeEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@ namespace EstoqueV1
             this.textBox1.Location = new System.Drawing.Point(252, 40);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(96, 20);
-            this.textBox1.TabIndex = 11;
+            this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnCancelar
@@ -67,7 +68,7 @@ namespace EstoqueV1
             this.btnCancelar.Location = new System.Drawing.Point(84, 198);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -77,7 +78,7 @@ namespace EstoqueV1
             this.btnSalvar.Location = new System.Drawing.Point(241, 198);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 9;
+            this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "&Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -96,16 +97,7 @@ namespace EstoqueV1
             this.txtNome.Location = new System.Drawing.Point(71, 40);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(172, 20);
-            this.txtNome.TabIndex = 10;
-            // 
-            // TxtId
-            // 
-            this.TxtId.Location = new System.Drawing.Point(18, 40);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.ReadOnly = true;
-            this.TxtId.Size = new System.Drawing.Size(32, 20);
-            this.TxtId.TabIndex = 7;
-            this.TxtId.TabStop = false;
+            this.txtNome.TabIndex = 1;
             // 
             // lblNome
             // 
@@ -127,6 +119,7 @@ namespace EstoqueV1
             this.DtgvDadosEstoque.Name = "DtgvDadosEstoque";
             this.DtgvDadosEstoque.Size = new System.Drawing.Size(330, 113);
             this.DtgvDadosEstoque.TabIndex = 16;
+            this.DtgvDadosEstoque.TabStop = false;
             // 
             // ColumIdEstoq
             // 
@@ -143,11 +136,27 @@ namespace EstoqueV1
             this.ColumNomeEstoq.HeaderText = "Nome do estoque";
             this.ColumNomeEstoq.Name = "ColumNomeEstoq";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(26, 74);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 17;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(12, 40);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(29, 20);
+            this.txtId.TabIndex = 0;
+            // 
             // NewEstoq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 248);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.DtgvDadosEstoque);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -155,7 +164,6 @@ namespace EstoqueV1
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.TxtId);
             this.Controls.Add(this.lblNome);
             this.Name = "NewEstoq";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -175,11 +183,12 @@ namespace EstoqueV1
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox TxtId;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.DataGridView DtgvDadosEstoque;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumIdEstoq;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumTipoEstoq;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumNomeEstoq;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtId;
     }
 }
