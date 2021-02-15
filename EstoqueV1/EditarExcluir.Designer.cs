@@ -38,7 +38,6 @@ namespace EstoqueV1
             this.btnSalvar = new System.Windows.Forms.Button();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.TxtId = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.txtQtd = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@ namespace EstoqueV1
             this.lblValor = new System.Windows.Forms.Label();
             this.lblQtd = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.txtEditCat = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,15 +119,6 @@ namespace EstoqueV1
             this.txtNome.Size = new System.Drawing.Size(86, 20);
             this.txtNome.TabIndex = 0;
             // 
-            // TxtId
-            // 
-            this.TxtId.Location = new System.Drawing.Point(184, 52);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.ReadOnly = true;
-            this.TxtId.Size = new System.Drawing.Size(93, 20);
-            this.TxtId.TabIndex = 1;
-            this.TxtId.TabStop = false;
-            // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
@@ -191,11 +182,19 @@ namespace EstoqueV1
             this.btnEditar.Text = "&Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
+            // txtEditCat
+            // 
+            this.txtEditCat.Location = new System.Drawing.Point(184, 52);
+            this.txtEditCat.Name = "txtEditCat";
+            this.txtEditCat.Size = new System.Drawing.Size(86, 20);
+            this.txtEditCat.TabIndex = 1;
+            // 
             // EditarExcluir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 163);
+            this.Controls.Add(this.txtEditCat);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.lblQtd);
             this.Controls.Add(this.lblValor);
@@ -207,7 +206,6 @@ namespace EstoqueV1
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.TxtId);
             this.Controls.Add(this.lblNome);
             this.Name = "EditarExcluir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -225,7 +223,6 @@ namespace EstoqueV1
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox TxtId;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumNomePRod;
@@ -237,5 +234,6 @@ namespace EstoqueV1
         private System.Windows.Forms.Label lblValor;
         private System.Windows.Forms.Label lblQtd;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.TextBox txtEditCat;
     }
 }

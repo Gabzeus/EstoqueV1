@@ -150,6 +150,12 @@
     <Compile Include="EditarExcluir.Designer.cs">
       <DependentUpon>EditarExcluir.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExcluirItensAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirItensAdm.Designer.cs">
+      <DependentUpon>ExcluirItensAdm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarExcluir.resx">
       <DependentUpon>EditarExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirItensAdm.resx">
+      <DependentUpon>ExcluirItensAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

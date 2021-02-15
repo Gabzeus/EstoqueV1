@@ -84,6 +84,7 @@ namespace EstoqueV1
             this.DtgvDadosCad.Name = "DtgvDadosCad";
             this.DtgvDadosCad.Size = new System.Drawing.Size(409, 241);
             this.DtgvDadosCad.TabIndex = 0;
+            this.DtgvDadosCad.TabStop = false;
             this.DtgvDadosCad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ColumId
@@ -107,7 +108,7 @@ namespace EstoqueV1
             this.BtnCategoriaNova.Location = new System.Drawing.Point(18, 73);
             this.BtnCategoriaNova.Name = "BtnCategoriaNova";
             this.BtnCategoriaNova.Size = new System.Drawing.Size(131, 23);
-            this.BtnCategoriaNova.TabIndex = 2;
+            this.BtnCategoriaNova.TabIndex = 0;
             this.BtnCategoriaNova.Text = "&Cadastrar item";
             this.BtnCategoriaNova.UseVisualStyleBackColor = true;
             this.BtnCategoriaNova.Click += new System.EventHandler(this.BtnCategoriaNova_Click);
@@ -117,7 +118,7 @@ namespace EstoqueV1
             this.btnEditar.Location = new System.Drawing.Point(18, 175);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(131, 23);
-            this.btnEditar.TabIndex = 3;
+            this.btnEditar.TabIndex = 2;
             this.btnEditar.Text = "&Editar ";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -156,7 +157,7 @@ namespace EstoqueV1
             this.btnSaidaItem.Location = new System.Drawing.Point(18, 128);
             this.btnSaidaItem.Name = "btnSaidaItem";
             this.btnSaidaItem.Size = new System.Drawing.Size(131, 23);
-            this.btnSaidaItem.TabIndex = 7;
+            this.btnSaidaItem.TabIndex = 1;
             this.btnSaidaItem.Text = "&Saida de item";
             this.btnSaidaItem.UseVisualStyleBackColor = true;
             this.btnSaidaItem.Click += new System.EventHandler(this.btnSaidaItem_Click);
@@ -166,7 +167,7 @@ namespace EstoqueV1
             this.BtnAtualizarCad.Location = new System.Drawing.Point(18, 291);
             this.BtnAtualizarCad.Name = "BtnAtualizarCad";
             this.BtnAtualizarCad.Size = new System.Drawing.Size(131, 23);
-            this.BtnAtualizarCad.TabIndex = 6;
+            this.BtnAtualizarCad.TabIndex = 4;
             this.BtnAtualizarCad.Text = "&Atualizar dados";
             this.BtnAtualizarCad.UseVisualStyleBackColor = true;
             // 
@@ -184,7 +185,7 @@ namespace EstoqueV1
             this.BtnExcluirCad.Location = new System.Drawing.Point(18, 231);
             this.BtnExcluirCad.Name = "BtnExcluirCad";
             this.BtnExcluirCad.Size = new System.Drawing.Size(131, 23);
-            this.BtnExcluirCad.TabIndex = 4;
+            this.BtnExcluirCad.TabIndex = 3;
             this.BtnExcluirCad.Text = "&Excluir";
             this.BtnExcluirCad.UseVisualStyleBackColor = true;
             this.BtnExcluirCad.Click += new System.EventHandler(this.BtnExcluirCad_Click_1);
@@ -210,25 +211,26 @@ namespace EstoqueV1
             this.BtnAttEstoq.Location = new System.Drawing.Point(18, 283);
             this.BtnAttEstoq.Name = "BtnAttEstoq";
             this.BtnAttEstoq.Size = new System.Drawing.Size(131, 26);
-            this.BtnAttEstoq.TabIndex = 11;
+            this.BtnAttEstoq.TabIndex = 3;
             this.BtnAttEstoq.Text = "&Atualizar Estoque";
             this.BtnAttEstoq.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(507, 330);
+            this.button3.Location = new System.Drawing.Point(527, 329);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(78, 23);
-            this.button3.TabIndex = 10;
+            this.button3.TabIndex = 4;
             this.button3.Text = "&Confirmar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // BtnExcluirEstoq
             // 
-            this.BtnExcluirEstoq.Location = new System.Drawing.Point(18, 221);
+            this.BtnExcluirEstoq.Location = new System.Drawing.Point(18, 212);
             this.BtnExcluirEstoq.Name = "BtnExcluirEstoq";
             this.BtnExcluirEstoq.Size = new System.Drawing.Size(131, 23);
-            this.BtnExcluirEstoq.TabIndex = 9;
+            this.BtnExcluirEstoq.TabIndex = 2;
             this.BtnExcluirEstoq.Text = "&Excluir";
             this.BtnExcluirEstoq.UseVisualStyleBackColor = true;
             this.BtnExcluirEstoq.Click += new System.EventHandler(this.BtnExcluirEstoq_Click);
@@ -244,6 +246,7 @@ namespace EstoqueV1
             this.DtgvDadosEstoque.Name = "DtgvDadosEstoque";
             this.DtgvDadosEstoque.Size = new System.Drawing.Size(430, 241);
             this.DtgvDadosEstoque.TabIndex = 6;
+            this.DtgvDadosEstoque.TabStop = false;
             // 
             // ColumIdEstoq
             // 
@@ -262,19 +265,20 @@ namespace EstoqueV1
             // 
             // BtnEditEstoq
             // 
-            this.BtnEditEstoq.Location = new System.Drawing.Point(18, 155);
+            this.BtnEditEstoq.Location = new System.Drawing.Point(18, 135);
             this.BtnEditEstoq.Name = "BtnEditEstoq";
             this.BtnEditEstoq.Size = new System.Drawing.Size(131, 23);
-            this.BtnEditEstoq.TabIndex = 8;
+            this.BtnEditEstoq.TabIndex = 1;
             this.BtnEditEstoq.Text = "&Editar ";
             this.BtnEditEstoq.UseVisualStyleBackColor = true;
+            this.BtnEditEstoq.Click += new System.EventHandler(this.BtnEditEstoq_Click);
             // 
             // BtnEstoqNew
             // 
             this.BtnEstoqNew.Location = new System.Drawing.Point(18, 68);
             this.BtnEstoqNew.Name = "BtnEstoqNew";
             this.BtnEstoqNew.Size = new System.Drawing.Size(131, 23);
-            this.BtnEstoqNew.TabIndex = 7;
+            this.BtnEstoqNew.TabIndex = 0;
             this.BtnEstoqNew.Text = "&Estoque novo";
             this.BtnEstoqNew.UseVisualStyleBackColor = true;
             this.BtnEstoqNew.Click += new System.EventHandler(this.button6_Click);
@@ -298,7 +302,7 @@ namespace EstoqueV1
             this.BtnAddUser.Location = new System.Drawing.Point(18, 169);
             this.BtnAddUser.Name = "BtnAddUser";
             this.BtnAddUser.Size = new System.Drawing.Size(131, 23);
-            this.BtnAddUser.TabIndex = 10;
+            this.BtnAddUser.TabIndex = 2;
             this.BtnAddUser.Text = "&Adicionar usuario";
             this.BtnAddUser.UseVisualStyleBackColor = true;
             this.BtnAddUser.Click += new System.EventHandler(this.BtnAddUser_Click);
@@ -308,7 +312,7 @@ namespace EstoqueV1
             this.BtnExcluirUser.Location = new System.Drawing.Point(18, 112);
             this.BtnExcluirUser.Name = "BtnExcluirUser";
             this.BtnExcluirUser.Size = new System.Drawing.Size(131, 23);
-            this.BtnExcluirUser.TabIndex = 9;
+            this.BtnExcluirUser.TabIndex = 1;
             this.BtnExcluirUser.Text = "&Excluir";
             this.BtnExcluirUser.UseVisualStyleBackColor = true;
             this.BtnExcluirUser.Click += new System.EventHandler(this.BtnExcluirUser_Click);
@@ -320,6 +324,7 @@ namespace EstoqueV1
             this.DtgvDadosUser.Name = "DtgvDadosUser";
             this.DtgvDadosUser.Size = new System.Drawing.Size(357, 241);
             this.DtgvDadosUser.TabIndex = 6;
+            this.DtgvDadosUser.TabStop = false;
             this.DtgvDadosUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // BtnNewDadosUser
@@ -327,7 +332,7 @@ namespace EstoqueV1
             this.BtnNewDadosUser.Location = new System.Drawing.Point(18, 56);
             this.BtnNewDadosUser.Name = "BtnNewDadosUser";
             this.BtnNewDadosUser.Size = new System.Drawing.Size(131, 23);
-            this.BtnNewDadosUser.TabIndex = 7;
+            this.BtnNewDadosUser.TabIndex = 0;
             this.BtnNewDadosUser.Text = "&Alterar dados ";
             this.BtnNewDadosUser.UseVisualStyleBackColor = true;
             this.BtnNewDadosUser.Click += new System.EventHandler(this.BtnNewDadosUser_Click);
@@ -350,7 +355,7 @@ namespace EstoqueV1
             this.BtnSaldo.Location = new System.Drawing.Point(18, 199);
             this.BtnSaldo.Name = "BtnSaldo";
             this.BtnSaldo.Size = new System.Drawing.Size(131, 26);
-            this.BtnSaldo.TabIndex = 11;
+            this.BtnSaldo.TabIndex = 2;
             this.BtnSaldo.Text = "&Saldo";
             this.BtnSaldo.UseVisualStyleBackColor = true;
             // 
@@ -359,7 +364,7 @@ namespace EstoqueV1
             this.BtnCheckQtd.Location = new System.Drawing.Point(18, 111);
             this.BtnCheckQtd.Name = "BtnCheckQtd";
             this.BtnCheckQtd.Size = new System.Drawing.Size(139, 39);
-            this.BtnCheckQtd.TabIndex = 8;
+            this.BtnCheckQtd.TabIndex = 1;
             this.BtnCheckQtd.Text = "&Verificar quantidade de produto";
             this.BtnCheckQtd.UseVisualStyleBackColor = true;
             // 
@@ -368,7 +373,7 @@ namespace EstoqueV1
             this.BtnAttGrafico.Location = new System.Drawing.Point(18, 45);
             this.BtnAttGrafico.Name = "BtnAttGrafico";
             this.BtnAttGrafico.Size = new System.Drawing.Size(139, 23);
-            this.BtnAttGrafico.TabIndex = 7;
+            this.BtnAttGrafico.TabIndex = 0;
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
             // 

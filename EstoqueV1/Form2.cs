@@ -53,8 +53,8 @@ namespace EstoqueV1
 
         private void BtnExcluirEstoq_Click(object sender, EventArgs e)
         {
-            ControladorUser UserAdmin = new ControladorUser();
-            UserAdmin.ShowDialog();
+            ExcluirItensAdm del = new ExcluirItensAdm();
+            del.ShowDialog();
 
         }
 
@@ -82,6 +82,16 @@ namespace EstoqueV1
         {
             EditarExcluir edit = new EditarExcluir();
             edit.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEditEstoq_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
