@@ -214,6 +214,7 @@ namespace EstoqueV1
             this.BtnAttEstoq.TabIndex = 3;
             this.BtnAttEstoq.Text = "&Atualizar Estoque";
             this.BtnAttEstoq.UseVisualStyleBackColor = true;
+            this.BtnAttEstoq.Click += new System.EventHandler(this.BtnAttEstoq_Click);
             // 
             // button3
             // 
@@ -376,10 +377,6 @@ namespace EstoqueV1
             this.BtnAttGrafico.TabIndex = 0;
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
-            // 
-            // programBindingSource
-            // 
-            this.programBindingSource.DataSource = typeof(EstoqueV1.Program);
             // 
             // Form2
             // 

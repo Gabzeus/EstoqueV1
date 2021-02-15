@@ -40,7 +40,6 @@ namespace EstoqueV1
             this.ColumIdEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumTipoEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumNomeEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).BeginInit();
             this.SuspendLayout();
@@ -136,13 +135,6 @@ namespace EstoqueV1
             this.ColumNomeEstoq.HeaderText = "Nome do estoque";
             this.ColumNomeEstoq.Name = "ColumNomeEstoq";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(26, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 17;
-            // 
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(12, 40);
@@ -156,7 +148,6 @@ namespace EstoqueV1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 248);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.DtgvDadosEstoque);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -188,7 +179,6 @@ namespace EstoqueV1
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumIdEstoq;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumTipoEstoq;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumNomeEstoq;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox txtId;
     }
 }
