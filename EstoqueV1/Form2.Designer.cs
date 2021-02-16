@@ -151,6 +151,7 @@ namespace EstoqueV1
             this.TabCadItem.TabIndex = 0;
             this.TabCadItem.Text = "Cadastro item";
             this.TabCadItem.UseVisualStyleBackColor = true;
+            this.TabCadItem.Click += new System.EventHandler(this.TabCadItem_Click);
             // 
             // btnSaidaItem
             // 

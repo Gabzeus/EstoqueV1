@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace EstoqueV1
 {
@@ -18,8 +19,8 @@ namespace EstoqueV1
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Curadik\OneDrive\Documents\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
-        SqlCommand cmd;
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;User id=root;database=BD_PacStoque;passowrd=newtwo$_$");
+        MySqlCommand cmd;
         public static string loginEmUso = "";
         
         private void Form1_Load(object sender, EventArgs e)
@@ -44,7 +45,7 @@ namespace EstoqueV1
                 string senha = txtSenha.Text;
                 string selectLogin = $"SELECT * FROM Contas WHERE Login = '{login}' AND Senha = '{senha}'";
 
-                cmd = new SqlCommand(selectLogin, conn);
+                cmd = new MySqlCommand(selectLogin, conn);
                 conn.Open();
                 try
                 {

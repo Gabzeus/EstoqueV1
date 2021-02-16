@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace EstoqueV1
 {
@@ -94,6 +95,11 @@ namespace EstoqueV1
         }
 
         private void BtnAttEstoq_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabCadItem_Click(object sender, EventArgs e)
         {
 
         }
