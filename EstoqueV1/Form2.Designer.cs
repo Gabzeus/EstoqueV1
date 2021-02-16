@@ -108,7 +108,7 @@ namespace EstoqueV1
             this.BtnCategoriaNova.Location = new System.Drawing.Point(626, 73);
             this.BtnCategoriaNova.Name = "BtnCategoriaNova";
             this.BtnCategoriaNova.Size = new System.Drawing.Size(131, 23);
-            this.BtnCategoriaNova.TabIndex = 0;
+            this.BtnCategoriaNova.TabIndex = 2;
             this.BtnCategoriaNova.Text = "&Cadastrar item";
             this.BtnCategoriaNova.UseVisualStyleBackColor = true;
             this.BtnCategoriaNova.Click += new System.EventHandler(this.BtnCategoriaNova_Click);
@@ -118,7 +118,7 @@ namespace EstoqueV1
             this.btnEditar.Location = new System.Drawing.Point(626, 204);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(131, 23);
-            this.btnEditar.TabIndex = 2;
+            this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "&Editar ";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -151,6 +151,7 @@ namespace EstoqueV1
             this.TabCadItem.TabIndex = 0;
             this.TabCadItem.Text = "Cadastro item";
             this.TabCadItem.UseVisualStyleBackColor = true;
+            this.TabCadItem.Click += new System.EventHandler(this.TabCadItem_Click);
             // 
             // btnSaidaItem
             // 
@@ -167,7 +168,7 @@ namespace EstoqueV1
             this.BtnAtualizarCad.Location = new System.Drawing.Point(30, 73);
             this.BtnAtualizarCad.Name = "BtnAtualizarCad";
             this.BtnAtualizarCad.Size = new System.Drawing.Size(131, 23);
-            this.BtnAtualizarCad.TabIndex = 4;
+            this.BtnAtualizarCad.TabIndex = 0;
             this.BtnAtualizarCad.Text = "&Adicionar item";
             this.BtnAtualizarCad.UseVisualStyleBackColor = true;
             this.BtnAtualizarCad.Click += new System.EventHandler(this.BtnAtualizarCad_Click);
@@ -387,7 +388,7 @@ namespace EstoqueV1
             this.Controls.Add(this.TabMenu);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Menu";
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).EndInit();
             this.TabMenu.ResumeLayout(false);
             this.TabCadItem.ResumeLayout(false);

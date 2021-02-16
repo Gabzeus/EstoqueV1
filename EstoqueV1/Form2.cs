@@ -103,5 +103,10 @@ namespace EstoqueV1
             ControladorEntrada control = new ControladorEntrada();
             control.ShowDialog();
         }
+
+        private void TabCadItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
