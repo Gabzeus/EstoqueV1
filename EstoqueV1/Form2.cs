@@ -97,5 +97,11 @@ namespace EstoqueV1
         {
 
         }
+
+        private void BtnAtualizarCad_Click(object sender, EventArgs e)
+        {
+            ControladorEntrada control = new ControladorEntrada();
+            control.ShowDialog();
+        }
     }
 }

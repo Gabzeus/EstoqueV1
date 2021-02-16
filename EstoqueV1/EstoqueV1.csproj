@@ -128,6 +128,12 @@
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="ControladorEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControladorEntrada.Designer.cs">
+      <DependentUpon>ControladorEntrada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Db_EstoquesDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -185,6 +191,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControladorEntrada.resx">
+      <DependentUpon>ControladorEntrada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProdutoCadastro.resx">
       <DependentUpon>ProdutoCadastro.cs</DependentUpon>

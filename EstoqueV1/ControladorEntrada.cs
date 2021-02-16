@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace EstoqueV1
 {
-    public partial class EditarExcluir : Form
+    public partial class ControladorEntrada : Form
     {
-        public EditarExcluir()
+        public ControladorEntrada()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EditarExcluir_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

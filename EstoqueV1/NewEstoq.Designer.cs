@@ -158,7 +158,7 @@ namespace EstoqueV1
             this.Controls.Add(this.lblNome);
             this.Name = "NewEstoq";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "NewEstoq";
+            this.Text = "Novo estoque";
             this.Load += new System.EventHandler(this.NewEstoq_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).EndInit();
             this.ResumeLayout(false);

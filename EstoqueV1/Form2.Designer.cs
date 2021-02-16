@@ -105,7 +105,7 @@ namespace EstoqueV1
             // 
             // BtnCategoriaNova
             // 
-            this.BtnCategoriaNova.Location = new System.Drawing.Point(18, 73);
+            this.BtnCategoriaNova.Location = new System.Drawing.Point(626, 73);
             this.BtnCategoriaNova.Name = "BtnCategoriaNova";
             this.BtnCategoriaNova.Size = new System.Drawing.Size(131, 23);
             this.BtnCategoriaNova.TabIndex = 0;
@@ -115,7 +115,7 @@ namespace EstoqueV1
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(18, 175);
+            this.btnEditar.Location = new System.Drawing.Point(626, 204);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(131, 23);
             this.btnEditar.TabIndex = 2;
@@ -154,7 +154,7 @@ namespace EstoqueV1
             // 
             // btnSaidaItem
             // 
-            this.btnSaidaItem.Location = new System.Drawing.Point(18, 128);
+            this.btnSaidaItem.Location = new System.Drawing.Point(30, 151);
             this.btnSaidaItem.Name = "btnSaidaItem";
             this.btnSaidaItem.Size = new System.Drawing.Size(131, 23);
             this.btnSaidaItem.TabIndex = 1;
@@ -164,12 +164,13 @@ namespace EstoqueV1
             // 
             // BtnAtualizarCad
             // 
-            this.BtnAtualizarCad.Location = new System.Drawing.Point(18, 291);
+            this.BtnAtualizarCad.Location = new System.Drawing.Point(30, 73);
             this.BtnAtualizarCad.Name = "BtnAtualizarCad";
             this.BtnAtualizarCad.Size = new System.Drawing.Size(131, 23);
             this.BtnAtualizarCad.TabIndex = 4;
-            this.BtnAtualizarCad.Text = "&Atualizar dados";
+            this.BtnAtualizarCad.Text = "&Adicionar item";
             this.BtnAtualizarCad.UseVisualStyleBackColor = true;
+            this.BtnAtualizarCad.Click += new System.EventHandler(this.BtnAtualizarCad_Click);
             // 
             // button2
             // 
@@ -182,7 +183,7 @@ namespace EstoqueV1
             // 
             // BtnExcluirCad
             // 
-            this.BtnExcluirCad.Location = new System.Drawing.Point(18, 231);
+            this.BtnExcluirCad.Location = new System.Drawing.Point(626, 151);
             this.BtnExcluirCad.Name = "BtnExcluirCad";
             this.BtnExcluirCad.Size = new System.Drawing.Size(131, 23);
             this.BtnExcluirCad.TabIndex = 3;

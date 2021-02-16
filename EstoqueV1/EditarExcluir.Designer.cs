@@ -209,7 +209,8 @@ namespace EstoqueV1
             this.Controls.Add(this.lblNome);
             this.Name = "EditarExcluir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "EditarExcluir";
+            this.Text = "Edição";
+            this.Load += new System.EventHandler(this.EditarExcluir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
