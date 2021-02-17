@@ -19,8 +19,8 @@ namespace EstoqueV1
             InitializeComponent();
         }
 
-        //MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;User id=root;database=BD_PacStoque;passowrd=newtwo$_$");
-        //MySqlCommand cmd;
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;User id=root;database=BD_PacStoque;passowrd=newtwo$_$");
+        MySqlCommand cmd;
         public static string loginEmUso = "";
         
         private void Form1_Load(object sender, EventArgs e)

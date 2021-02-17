@@ -114,5 +114,11 @@ namespace EstoqueV1
             AddItens add = new AddItens();
             add.ShowDialog();
         }
+
+        private void btnHistorico_Click(object sender, EventArgs e)
+        {
+            Historico historico = new Historico();
+            historico.ShowDialog();
+        }
     }
 }

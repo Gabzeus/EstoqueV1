@@ -59,6 +59,7 @@ namespace EstoqueV1
             this.BtnCheckQtd = new System.Windows.Forms.Button();
             this.BtnAttGrafico = new System.Windows.Forms.Button();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnHistorico = new System.Windows.Forms.Button();
             this.TabMenu.SuspendLayout();
             this.TabCadItem.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -319,6 +320,7 @@ namespace EstoqueV1
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnHistorico);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.BtnSaldo);
             this.tabPage3.Controls.Add(this.BtnCheckQtd);
@@ -367,6 +369,16 @@ namespace EstoqueV1
             this.BtnAttGrafico.TabIndex = 0;
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
+            // 
+            // btnHistorico
+            // 
+            this.btnHistorico.Location = new System.Drawing.Point(18, 312);
+            this.btnHistorico.Name = "btnHistorico";
+            this.btnHistorico.Size = new System.Drawing.Size(131, 23);
+            this.btnHistorico.TabIndex = 4;
+            this.btnHistorico.Text = "&Historico";
+            this.btnHistorico.UseVisualStyleBackColor = true;
+            this.btnHistorico.Click += new System.EventHandler(this.btnHistorico_Click);
             // 
             // Form2
             // 
@@ -422,5 +434,6 @@ namespace EstoqueV1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnHistorico;
     }
 }
