@@ -114,7 +114,7 @@ namespace EstoqueV1
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(76, 52);
+            this.txtNome.Location = new System.Drawing.Point(75, 52);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(86, 20);
             this.txtNome.TabIndex = 0;
@@ -209,7 +209,7 @@ namespace EstoqueV1
             this.Controls.Add(this.lblNome);
             this.Name = "EditarExcluir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "EditarExcluir";
+            this.Text = "Edição";
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -30,95 +30,55 @@ namespace EstoqueV1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.DtgvDadosCad = new System.Windows.Forms.DataGridView();
-            this.ColumId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumQtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnCategoriaNova = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.TabMenu = new System.Windows.Forms.TabControl();
             this.TabCadItem = new System.Windows.Forms.TabPage();
             this.btnSaidaItem = new System.Windows.Forms.Button();
-            this.BtnAtualizarCad = new System.Windows.Forms.Button();
+            this.BtnEntrada = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnExcluirCad = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.BtnAttEstoq = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.BtnExcluirEstoq = new System.Windows.Forms.Button();
-            this.DtgvDadosEstoque = new System.Windows.Forms.DataGridView();
-            this.ColumIdEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumTipoEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumNomeEstoq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnEditEstoq = new System.Windows.Forms.Button();
             this.BtnEstoqNew = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.BtnAddUser = new System.Windows.Forms.Button();
             this.BtnExcluirUser = new System.Windows.Forms.Button();
-            this.DtgvDadosUser = new System.Windows.Forms.DataGridView();
             this.BtnNewDadosUser = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.BtnSaldo = new System.Windows.Forms.Button();
             this.BtnCheckQtd = new System.Windows.Forms.Button();
             this.BtnAttGrafico = new System.Windows.Forms.Button();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).BeginInit();
+            this.viewItens = new System.Windows.Forms.ListView();
+            this.viewEstoque = new System.Windows.Forms.ListView();
+            this.viewConta = new System.Windows.Forms.ListView();
             this.TabMenu.SuspendLayout();
             this.TabCadItem.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).BeginInit();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // DtgvDadosCad
-            // 
-            this.DtgvDadosCad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgvDadosCad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumId,
-            this.ColumNome,
-            this.ColumQtd});
-            this.DtgvDadosCad.Location = new System.Drawing.Point(171, 73);
-            this.DtgvDadosCad.Name = "DtgvDadosCad";
-            this.DtgvDadosCad.Size = new System.Drawing.Size(409, 241);
-            this.DtgvDadosCad.TabIndex = 0;
-            this.DtgvDadosCad.TabStop = false;
-            this.DtgvDadosCad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ColumId
-            // 
-            this.ColumId.Frozen = true;
-            this.ColumId.HeaderText = "Id";
-            this.ColumId.Name = "ColumId";
-            // 
-            // ColumNome
-            // 
-            this.ColumNome.HeaderText = "Nome";
-            this.ColumNome.Name = "ColumNome";
-            // 
-            // ColumQtd
-            // 
-            this.ColumQtd.HeaderText = "Quantidade";
-            this.ColumQtd.Name = "ColumQtd";
-            // 
             // BtnCategoriaNova
             // 
-            this.BtnCategoriaNova.Location = new System.Drawing.Point(18, 73);
+            this.BtnCategoriaNova.Location = new System.Drawing.Point(695, 98);
             this.BtnCategoriaNova.Name = "BtnCategoriaNova";
             this.BtnCategoriaNova.Size = new System.Drawing.Size(131, 23);
-            this.BtnCategoriaNova.TabIndex = 0;
+            this.BtnCategoriaNova.TabIndex = 2;
             this.BtnCategoriaNova.Text = "&Cadastrar item";
             this.BtnCategoriaNova.UseVisualStyleBackColor = true;
             this.BtnCategoriaNova.Click += new System.EventHandler(this.BtnCategoriaNova_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(18, 175);
+            this.btnEditar.Location = new System.Drawing.Point(695, 161);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(131, 23);
-            this.btnEditar.TabIndex = 2;
+            this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "&Editar ";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -137,11 +97,11 @@ namespace EstoqueV1
             // 
             // TabCadItem
             // 
+            this.TabCadItem.Controls.Add(this.viewItens);
             this.TabCadItem.Controls.Add(this.btnSaidaItem);
-            this.TabCadItem.Controls.Add(this.BtnAtualizarCad);
+            this.TabCadItem.Controls.Add(this.BtnEntrada);
             this.TabCadItem.Controls.Add(this.button2);
             this.TabCadItem.Controls.Add(this.BtnExcluirCad);
-            this.TabCadItem.Controls.Add(this.DtgvDadosCad);
             this.TabCadItem.Controls.Add(this.btnEditar);
             this.TabCadItem.Controls.Add(this.BtnCategoriaNova);
             this.TabCadItem.Location = new System.Drawing.Point(4, 22);
@@ -155,7 +115,7 @@ namespace EstoqueV1
             // 
             // btnSaidaItem
             // 
-            this.btnSaidaItem.Location = new System.Drawing.Point(18, 128);
+            this.btnSaidaItem.Location = new System.Drawing.Point(18, 228);
             this.btnSaidaItem.Name = "btnSaidaItem";
             this.btnSaidaItem.Size = new System.Drawing.Size(131, 23);
             this.btnSaidaItem.TabIndex = 1;
@@ -163,18 +123,18 @@ namespace EstoqueV1
             this.btnSaidaItem.UseVisualStyleBackColor = true;
             this.btnSaidaItem.Click += new System.EventHandler(this.btnSaidaItem_Click);
             // 
-            // BtnAtualizarCad
+            // BtnEntrada
             // 
-            this.BtnAtualizarCad.Location = new System.Drawing.Point(18, 291);
-            this.BtnAtualizarCad.Name = "BtnAtualizarCad";
-            this.BtnAtualizarCad.Size = new System.Drawing.Size(131, 23);
-            this.BtnAtualizarCad.TabIndex = 4;
-            this.BtnAtualizarCad.Text = "&Atualizar dados";
-            this.BtnAtualizarCad.UseVisualStyleBackColor = true;
+            this.BtnEntrada.Location = new System.Drawing.Point(18, 73);
+            this.BtnEntrada.Name = "BtnEntrada";
+            this.BtnEntrada.Size = new System.Drawing.Size(131, 23);
+            this.BtnEntrada.TabIndex = 0;
+            this.BtnEntrada.Text = "&Entrada de itens";
+            this.BtnEntrada.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(522, 334);
+            this.button2.Location = new System.Drawing.Point(611, 336);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 23);
             this.button2.TabIndex = 5;
@@ -183,20 +143,19 @@ namespace EstoqueV1
             // 
             // BtnExcluirCad
             // 
-            this.BtnExcluirCad.Location = new System.Drawing.Point(18, 231);
+            this.BtnExcluirCad.Location = new System.Drawing.Point(695, 228);
             this.BtnExcluirCad.Name = "BtnExcluirCad";
             this.BtnExcluirCad.Size = new System.Drawing.Size(131, 23);
-            this.BtnExcluirCad.TabIndex = 3;
+            this.BtnExcluirCad.TabIndex = 4;
             this.BtnExcluirCad.Text = "&Excluir";
             this.BtnExcluirCad.UseVisualStyleBackColor = true;
             this.BtnExcluirCad.Click += new System.EventHandler(this.BtnExcluirCad_Click_1);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.BtnAttEstoq);
+            this.tabPage2.Controls.Add(this.viewEstoque);
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.BtnExcluirEstoq);
-            this.tabPage2.Controls.Add(this.DtgvDadosEstoque);
             this.tabPage2.Controls.Add(this.BtnEditEstoq);
             this.tabPage2.Controls.Add(this.BtnEstoqNew);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -207,19 +166,9 @@ namespace EstoqueV1
             this.tabPage2.Text = "Edição de Estoque";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // BtnAttEstoq
-            // 
-            this.BtnAttEstoq.Location = new System.Drawing.Point(18, 283);
-            this.BtnAttEstoq.Name = "BtnAttEstoq";
-            this.BtnAttEstoq.Size = new System.Drawing.Size(131, 26);
-            this.BtnAttEstoq.TabIndex = 3;
-            this.BtnAttEstoq.Text = "&Atualizar Estoque";
-            this.BtnAttEstoq.UseVisualStyleBackColor = true;
-            this.BtnAttEstoq.Click += new System.EventHandler(this.BtnAttEstoq_Click);
-            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(527, 329);
+            this.button3.Location = new System.Drawing.Point(654, 340);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(78, 23);
             this.button3.TabIndex = 4;
@@ -229,7 +178,7 @@ namespace EstoqueV1
             // 
             // BtnExcluirEstoq
             // 
-            this.BtnExcluirEstoq.Location = new System.Drawing.Point(18, 212);
+            this.BtnExcluirEstoq.Location = new System.Drawing.Point(734, 256);
             this.BtnExcluirEstoq.Name = "BtnExcluirEstoq";
             this.BtnExcluirEstoq.Size = new System.Drawing.Size(131, 23);
             this.BtnExcluirEstoq.TabIndex = 2;
@@ -237,37 +186,9 @@ namespace EstoqueV1
             this.BtnExcluirEstoq.UseVisualStyleBackColor = true;
             this.BtnExcluirEstoq.Click += new System.EventHandler(this.BtnExcluirEstoq_Click);
             // 
-            // DtgvDadosEstoque
-            // 
-            this.DtgvDadosEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgvDadosEstoque.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumIdEstoq,
-            this.ColumTipoEstoq,
-            this.ColumNomeEstoq});
-            this.DtgvDadosEstoque.Location = new System.Drawing.Point(175, 68);
-            this.DtgvDadosEstoque.Name = "DtgvDadosEstoque";
-            this.DtgvDadosEstoque.Size = new System.Drawing.Size(430, 241);
-            this.DtgvDadosEstoque.TabIndex = 6;
-            this.DtgvDadosEstoque.TabStop = false;
-            // 
-            // ColumIdEstoq
-            // 
-            this.ColumIdEstoq.HeaderText = "Id";
-            this.ColumIdEstoq.Name = "ColumIdEstoq";
-            // 
-            // ColumTipoEstoq
-            // 
-            this.ColumTipoEstoq.HeaderText = "Tipo de estoque";
-            this.ColumTipoEstoq.Name = "ColumTipoEstoq";
-            // 
-            // ColumNomeEstoq
-            // 
-            this.ColumNomeEstoq.HeaderText = "Nome do estoque";
-            this.ColumNomeEstoq.Name = "ColumNomeEstoq";
-            // 
             // BtnEditEstoq
             // 
-            this.BtnEditEstoq.Location = new System.Drawing.Point(18, 135);
+            this.BtnEditEstoq.Location = new System.Drawing.Point(734, 68);
             this.BtnEditEstoq.Name = "BtnEditEstoq";
             this.BtnEditEstoq.Size = new System.Drawing.Size(131, 23);
             this.BtnEditEstoq.TabIndex = 1;
@@ -277,7 +198,7 @@ namespace EstoqueV1
             // 
             // BtnEstoqNew
             // 
-            this.BtnEstoqNew.Location = new System.Drawing.Point(18, 68);
+            this.BtnEstoqNew.Location = new System.Drawing.Point(25, 166);
             this.BtnEstoqNew.Name = "BtnEstoqNew";
             this.BtnEstoqNew.Size = new System.Drawing.Size(131, 23);
             this.BtnEstoqNew.TabIndex = 0;
@@ -287,9 +208,9 @@ namespace EstoqueV1
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.viewConta);
             this.tabPage1.Controls.Add(this.BtnAddUser);
             this.tabPage1.Controls.Add(this.BtnExcluirUser);
-            this.tabPage1.Controls.Add(this.DtgvDadosUser);
             this.tabPage1.Controls.Add(this.BtnNewDadosUser);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -301,7 +222,7 @@ namespace EstoqueV1
             // 
             // BtnAddUser
             // 
-            this.BtnAddUser.Location = new System.Drawing.Point(18, 169);
+            this.BtnAddUser.Location = new System.Drawing.Point(38, 340);
             this.BtnAddUser.Name = "BtnAddUser";
             this.BtnAddUser.Size = new System.Drawing.Size(131, 23);
             this.BtnAddUser.TabIndex = 2;
@@ -311,7 +232,7 @@ namespace EstoqueV1
             // 
             // BtnExcluirUser
             // 
-            this.BtnExcluirUser.Location = new System.Drawing.Point(18, 112);
+            this.BtnExcluirUser.Location = new System.Drawing.Point(38, 200);
             this.BtnExcluirUser.Name = "BtnExcluirUser";
             this.BtnExcluirUser.Size = new System.Drawing.Size(131, 23);
             this.BtnExcluirUser.TabIndex = 1;
@@ -319,19 +240,9 @@ namespace EstoqueV1
             this.BtnExcluirUser.UseVisualStyleBackColor = true;
             this.BtnExcluirUser.Click += new System.EventHandler(this.BtnExcluirUser_Click);
             // 
-            // DtgvDadosUser
-            // 
-            this.DtgvDadosUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DtgvDadosUser.Location = new System.Drawing.Point(171, 34);
-            this.DtgvDadosUser.Name = "DtgvDadosUser";
-            this.DtgvDadosUser.Size = new System.Drawing.Size(357, 241);
-            this.DtgvDadosUser.TabIndex = 6;
-            this.DtgvDadosUser.TabStop = false;
-            this.DtgvDadosUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
-            // 
             // BtnNewDadosUser
             // 
-            this.BtnNewDadosUser.Location = new System.Drawing.Point(18, 56);
+            this.BtnNewDadosUser.Location = new System.Drawing.Point(38, 66);
             this.BtnNewDadosUser.Name = "BtnNewDadosUser";
             this.BtnNewDadosUser.Size = new System.Drawing.Size(131, 23);
             this.BtnNewDadosUser.TabIndex = 0;
@@ -379,6 +290,35 @@ namespace EstoqueV1
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
             // 
+            // viewItens
+            // 
+            this.viewItens.HideSelection = false;
+            this.viewItens.Location = new System.Drawing.Point(172, 54);
+            this.viewItens.Name = "viewItens";
+            this.viewItens.Size = new System.Drawing.Size(517, 276);
+            this.viewItens.TabIndex = 6;
+            this.viewItens.TabStop = false;
+            this.viewItens.UseCompatibleStateImageBehavior = false;
+            // 
+            // viewEstoque
+            // 
+            this.viewEstoque.HideSelection = false;
+            this.viewEstoque.Location = new System.Drawing.Point(193, 58);
+            this.viewEstoque.Name = "viewEstoque";
+            this.viewEstoque.Size = new System.Drawing.Size(517, 276);
+            this.viewEstoque.TabIndex = 7;
+            this.viewEstoque.TabStop = false;
+            this.viewEstoque.UseCompatibleStateImageBehavior = false;
+            // 
+            // viewConta
+            // 
+            this.viewConta.HideSelection = false;
+            this.viewConta.Location = new System.Drawing.Point(211, 66);
+            this.viewConta.Name = "viewConta";
+            this.viewConta.Size = new System.Drawing.Size(467, 321);
+            this.viewConta.TabIndex = 3;
+            this.viewConta.UseCompatibleStateImageBehavior = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,14 +327,11 @@ namespace EstoqueV1
             this.Controls.Add(this.TabMenu);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).EndInit();
+            this.Text = "Menu";
             this.TabMenu.ResumeLayout(false);
             this.TabCadItem.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).EndInit();
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -402,8 +339,6 @@ namespace EstoqueV1
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView DtgvDadosCad;
         private System.Windows.Forms.Button BtnCategoriaNova;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.BindingSource programBindingSource;
@@ -414,11 +349,9 @@ namespace EstoqueV1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button BtnExcluirEstoq;
-        private System.Windows.Forms.DataGridView DtgvDadosEstoque;
         private System.Windows.Forms.Button BtnEditEstoq;
         private System.Windows.Forms.Button BtnEstoqNew;
-        private System.Windows.Forms.Button BtnAtualizarCad;
-        private System.Windows.Forms.Button BtnAttEstoq;
+        private System.Windows.Forms.Button BtnEntrada;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button BtnExcluirUser;
         private System.Windows.Forms.Button BtnNewDadosUser;
@@ -428,12 +361,8 @@ namespace EstoqueV1
         private System.Windows.Forms.Button BtnAttGrafico;
         private System.Windows.Forms.Button BtnAddUser;
         private System.Windows.Forms.Button btnSaidaItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumQtd;
-        private System.Windows.Forms.DataGridView DtgvDadosUser;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumIdEstoq;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumTipoEstoq;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumNomeEstoq;
+        private System.Windows.Forms.ListView viewItens;
+        private System.Windows.Forms.ListView viewEstoque;
+        private System.Windows.Forms.ListView viewConta;
     }
 }
