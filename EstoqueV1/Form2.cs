@@ -103,5 +103,16 @@ namespace EstoqueV1
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEntrada_Click(object sender, EventArgs e)
+        {
+            AddItens add = new AddItens();
+            add.ShowDialog();
+        }
     }
 }

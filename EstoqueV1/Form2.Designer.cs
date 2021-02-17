@@ -34,31 +34,31 @@ namespace EstoqueV1
             this.btnEditar = new System.Windows.Forms.Button();
             this.TabMenu = new System.Windows.Forms.TabControl();
             this.TabCadItem = new System.Windows.Forms.TabPage();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.viewItens = new System.Windows.Forms.ListView();
             this.btnSaidaItem = new System.Windows.Forms.Button();
             this.BtnEntrada = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnExcluirCad = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.viewEstoque = new System.Windows.Forms.ListView();
             this.button3 = new System.Windows.Forms.Button();
             this.BtnExcluirEstoq = new System.Windows.Forms.Button();
             this.BtnEditEstoq = new System.Windows.Forms.Button();
             this.BtnEstoqNew = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.viewConta = new System.Windows.Forms.ListView();
             this.BtnAddUser = new System.Windows.Forms.Button();
             this.BtnExcluirUser = new System.Windows.Forms.Button();
             this.BtnNewDadosUser = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.BtnSaldo = new System.Windows.Forms.Button();
             this.BtnCheckQtd = new System.Windows.Forms.Button();
             this.BtnAttGrafico = new System.Windows.Forms.Button();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viewEstoque = new System.Windows.Forms.ListView();
-            this.viewConta = new System.Windows.Forms.ListView();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.viewItens = new System.Windows.Forms.ListView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.TabMenu.SuspendLayout();
             this.TabCadItem.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -118,6 +118,26 @@ namespace EstoqueV1
             this.TabCadItem.UseVisualStyleBackColor = true;
             this.TabCadItem.Click += new System.EventHandler(this.TabCadItem_Click);
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
+            this.lblTitulo.Location = new System.Drawing.Point(375, 13);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(100, 26);
+            this.lblTitulo.TabIndex = 7;
+            this.lblTitulo.Text = "Cadastro";
+            // 
+            // viewItens
+            // 
+            this.viewItens.HideSelection = false;
+            this.viewItens.Location = new System.Drawing.Point(172, 66);
+            this.viewItens.Name = "viewItens";
+            this.viewItens.Size = new System.Drawing.Size(517, 276);
+            this.viewItens.TabIndex = 6;
+            this.viewItens.TabStop = false;
+            this.viewItens.UseCompatibleStateImageBehavior = false;
+            // 
             // btnSaidaItem
             // 
             this.btnSaidaItem.Location = new System.Drawing.Point(18, 240);
@@ -136,6 +156,7 @@ namespace EstoqueV1
             this.BtnEntrada.TabIndex = 0;
             this.BtnEntrada.Text = "&Entrada de itens";
             this.BtnEntrada.UseVisualStyleBackColor = true;
+            this.BtnEntrada.Click += new System.EventHandler(this.BtnEntrada_Click);
             // 
             // button2
             // 
@@ -171,6 +192,26 @@ namespace EstoqueV1
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Edição de Estoque";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
+            this.label1.Location = new System.Drawing.Point(407, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 26);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Estoque";
+            // 
+            // viewEstoque
+            // 
+            this.viewEstoque.HideSelection = false;
+            this.viewEstoque.Location = new System.Drawing.Point(199, 61);
+            this.viewEstoque.Name = "viewEstoque";
+            this.viewEstoque.Size = new System.Drawing.Size(517, 276);
+            this.viewEstoque.TabIndex = 7;
+            this.viewEstoque.TabStop = false;
+            this.viewEstoque.UseCompatibleStateImageBehavior = false;
             // 
             // button3
             // 
@@ -227,6 +268,25 @@ namespace EstoqueV1
             this.tabPage1.Text = "Configuração de conta";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
+            this.label2.Location = new System.Drawing.Point(335, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(230, 26);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Configuração de conta";
+            // 
+            // viewConta
+            // 
+            this.viewConta.HideSelection = false;
+            this.viewConta.Location = new System.Drawing.Point(211, 66);
+            this.viewConta.Name = "viewConta";
+            this.viewConta.Size = new System.Drawing.Size(467, 321);
+            this.viewConta.TabIndex = 3;
+            this.viewConta.UseCompatibleStateImageBehavior = false;
+            // 
             // BtnAddUser
             // 
             this.BtnAddUser.Location = new System.Drawing.Point(38, 340);
@@ -271,6 +331,16 @@ namespace EstoqueV1
             this.tabPage3.Text = "Rotinas";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
+            this.label3.Location = new System.Drawing.Point(345, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(164, 26);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Dados da conta";
+            // 
             // BtnSaldo
             // 
             this.BtnSaldo.Location = new System.Drawing.Point(18, 256);
@@ -298,75 +368,6 @@ namespace EstoqueV1
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
             // 
-            // viewEstoque
-            // 
-            this.viewEstoque.HideSelection = false;
-            this.viewEstoque.Location = new System.Drawing.Point(199, 61);
-            this.viewEstoque.Name = "viewEstoque";
-            this.viewEstoque.Size = new System.Drawing.Size(517, 276);
-            this.viewEstoque.TabIndex = 7;
-            this.viewEstoque.TabStop = false;
-            this.viewEstoque.UseCompatibleStateImageBehavior = false;
-            // 
-            // viewConta
-            // 
-            this.viewConta.HideSelection = false;
-            this.viewConta.Location = new System.Drawing.Point(211, 66);
-            this.viewConta.Name = "viewConta";
-            this.viewConta.Size = new System.Drawing.Size(467, 321);
-            this.viewConta.TabIndex = 3;
-            this.viewConta.UseCompatibleStateImageBehavior = false;
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
-            this.lblTitulo.Location = new System.Drawing.Point(375, 13);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(100, 26);
-            this.lblTitulo.TabIndex = 7;
-            this.lblTitulo.Text = "Cadastro";
-            // 
-            // viewItens
-            // 
-            this.viewItens.HideSelection = false;
-            this.viewItens.Location = new System.Drawing.Point(172, 66);
-            this.viewItens.Name = "viewItens";
-            this.viewItens.Size = new System.Drawing.Size(517, 276);
-            this.viewItens.TabIndex = 6;
-            this.viewItens.TabStop = false;
-            this.viewItens.UseCompatibleStateImageBehavior = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
-            this.label1.Location = new System.Drawing.Point(407, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 26);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Estoque";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
-            this.label2.Location = new System.Drawing.Point(335, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(230, 26);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Configuração de conta";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
-            this.label3.Location = new System.Drawing.Point(345, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 26);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Dados da conta";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,6 +377,7 @@ namespace EstoqueV1
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.TabMenu.ResumeLayout(false);
             this.TabCadItem.ResumeLayout(false);
             this.TabCadItem.PerformLayout();
