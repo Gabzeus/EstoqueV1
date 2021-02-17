@@ -122,8 +122,13 @@ namespace EstoqueV1
             this.BtnCategoriaNova.Name = "BtnCategoriaNova";
             this.BtnCategoriaNova.Size = new System.Drawing.Size(131, 23);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.BtnCategoriaNova.TabIndex = 2;
             this.BtnCategoriaNova.Text = "&Cadastrar item";
+=======
+            this.BtnCategoriaNova.TabIndex = 0;
+            this.BtnCategoriaNova.Text = "&Cadastrar produto";
+>>>>>>> Stashed changes
 =======
             this.BtnCategoriaNova.TabIndex = 0;
             this.BtnCategoriaNova.Text = "&Cadastrar produto";
@@ -134,7 +139,11 @@ namespace EstoqueV1
             // btnEditar
             // 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.btnEditar.Location = new System.Drawing.Point(626, 204);
+=======
+            this.btnEditar.Location = new System.Drawing.Point(18, 132);
+>>>>>>> Stashed changes
 =======
             this.btnEditar.Location = new System.Drawing.Point(18, 132);
 >>>>>>> Stashed changes
@@ -178,7 +187,11 @@ namespace EstoqueV1
             // btnSaidaItem
             // 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.btnSaidaItem.Location = new System.Drawing.Point(30, 151);
+=======
+            this.btnSaidaItem.Location = new System.Drawing.Point(630, 85);
+>>>>>>> Stashed changes
 =======
             this.btnSaidaItem.Location = new System.Drawing.Point(630, 85);
 >>>>>>> Stashed changes
@@ -517,6 +530,9 @@ namespace EstoqueV1
 =======
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).EndInit();
             this.TabMenu.ResumeLayout(false);

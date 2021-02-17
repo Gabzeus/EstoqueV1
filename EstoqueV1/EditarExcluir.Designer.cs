@@ -271,6 +271,9 @@ namespace EstoqueV1
             this.Text = "Edição";
 =======
             this.Text = "EditarExcluir";
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             this.Load += new System.EventHandler(this.EditarExcluir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosEstoque)).EndInit();

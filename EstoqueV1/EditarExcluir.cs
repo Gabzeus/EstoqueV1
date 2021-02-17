@@ -31,10 +31,13 @@ namespace EstoqueV1
         }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         private void EditarExcluir_Load(object sender, EventArgs e)
         {
 
 =======
+=======
+>>>>>>> Stashed changes
         private void btnEditar_Click(object sender, EventArgs e)
         {
 
@@ -86,6 +89,9 @@ namespace EstoqueV1
             bsource.DataSource = ds.Tables["Produtos"];
             DtgvDadosEstoque.DataSource = bsource;
             conn.Close();
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         }
     }
