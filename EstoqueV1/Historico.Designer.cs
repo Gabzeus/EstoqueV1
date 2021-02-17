@@ -47,6 +47,7 @@ namespace EstoqueV1
             this.dgvDados.Name = "dgvDados";
             this.dgvDados.Size = new System.Drawing.Size(392, 326);
             this.dgvDados.TabIndex = 0;
+            this.dgvDados.TabStop = false;
             // 
             // btnPesquisar
             // 
@@ -62,7 +63,7 @@ namespace EstoqueV1
             this.btnCancelar.Location = new System.Drawing.Point(579, 157);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -71,7 +72,7 @@ namespace EstoqueV1
             this.btnSair.Location = new System.Drawing.Point(713, 157);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 3;
+            this.btnSair.TabIndex = 2;
             this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.button3_Click);
@@ -101,7 +102,7 @@ namespace EstoqueV1
             this.textBox1.Location = new System.Drawing.Point(589, 80);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
+            this.textBox1.TabIndex = 0;
             // 
             // lblTitulo
             // 
@@ -127,6 +128,7 @@ namespace EstoqueV1
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvDados);
             this.Name = "Historico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Historico";
             this.Load += new System.EventHandler(this.Historico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();

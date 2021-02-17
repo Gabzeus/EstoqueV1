@@ -120,5 +120,16 @@ namespace EstoqueV1
             Historico historico = new Historico();
             historico.ShowDialog();
         }
+
+        private void BtnAttGrafico_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCheckQtd_Click(object sender, EventArgs e)
+        {
+            Notificações not = new Notificações();
+            not.ShowDialog();
+        }
     }
 }
