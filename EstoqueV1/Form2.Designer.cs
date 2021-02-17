@@ -52,9 +52,13 @@ namespace EstoqueV1
             this.BtnCheckQtd = new System.Windows.Forms.Button();
             this.BtnAttGrafico = new System.Windows.Forms.Button();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viewItens = new System.Windows.Forms.ListView();
             this.viewEstoque = new System.Windows.Forms.ListView();
             this.viewConta = new System.Windows.Forms.ListView();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.viewItens = new System.Windows.Forms.ListView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.TabMenu.SuspendLayout();
             this.TabCadItem.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -65,7 +69,7 @@ namespace EstoqueV1
             // 
             // BtnCategoriaNova
             // 
-            this.BtnCategoriaNova.Location = new System.Drawing.Point(695, 98);
+            this.BtnCategoriaNova.Location = new System.Drawing.Point(695, 110);
             this.BtnCategoriaNova.Name = "BtnCategoriaNova";
             this.BtnCategoriaNova.Size = new System.Drawing.Size(131, 23);
             this.BtnCategoriaNova.TabIndex = 2;
@@ -75,7 +79,7 @@ namespace EstoqueV1
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(695, 161);
+            this.btnEditar.Location = new System.Drawing.Point(695, 173);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(131, 23);
             this.btnEditar.TabIndex = 3;
@@ -97,6 +101,7 @@ namespace EstoqueV1
             // 
             // TabCadItem
             // 
+            this.TabCadItem.Controls.Add(this.lblTitulo);
             this.TabCadItem.Controls.Add(this.viewItens);
             this.TabCadItem.Controls.Add(this.btnSaidaItem);
             this.TabCadItem.Controls.Add(this.BtnEntrada);
@@ -115,7 +120,7 @@ namespace EstoqueV1
             // 
             // btnSaidaItem
             // 
-            this.btnSaidaItem.Location = new System.Drawing.Point(18, 228);
+            this.btnSaidaItem.Location = new System.Drawing.Point(18, 240);
             this.btnSaidaItem.Name = "btnSaidaItem";
             this.btnSaidaItem.Size = new System.Drawing.Size(131, 23);
             this.btnSaidaItem.TabIndex = 1;
@@ -125,7 +130,7 @@ namespace EstoqueV1
             // 
             // BtnEntrada
             // 
-            this.BtnEntrada.Location = new System.Drawing.Point(18, 73);
+            this.BtnEntrada.Location = new System.Drawing.Point(18, 85);
             this.BtnEntrada.Name = "BtnEntrada";
             this.BtnEntrada.Size = new System.Drawing.Size(131, 23);
             this.BtnEntrada.TabIndex = 0;
@@ -134,7 +139,7 @@ namespace EstoqueV1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(611, 336);
+            this.button2.Location = new System.Drawing.Point(611, 348);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 23);
             this.button2.TabIndex = 5;
@@ -143,7 +148,7 @@ namespace EstoqueV1
             // 
             // BtnExcluirCad
             // 
-            this.BtnExcluirCad.Location = new System.Drawing.Point(695, 228);
+            this.BtnExcluirCad.Location = new System.Drawing.Point(695, 240);
             this.BtnExcluirCad.Name = "BtnExcluirCad";
             this.BtnExcluirCad.Size = new System.Drawing.Size(131, 23);
             this.BtnExcluirCad.TabIndex = 4;
@@ -153,6 +158,7 @@ namespace EstoqueV1
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.viewEstoque);
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.BtnExcluirEstoq);
@@ -168,7 +174,7 @@ namespace EstoqueV1
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(654, 340);
+            this.button3.Location = new System.Drawing.Point(660, 343);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(78, 23);
             this.button3.TabIndex = 4;
@@ -178,7 +184,7 @@ namespace EstoqueV1
             // 
             // BtnExcluirEstoq
             // 
-            this.BtnExcluirEstoq.Location = new System.Drawing.Point(734, 256);
+            this.BtnExcluirEstoq.Location = new System.Drawing.Point(740, 259);
             this.BtnExcluirEstoq.Name = "BtnExcluirEstoq";
             this.BtnExcluirEstoq.Size = new System.Drawing.Size(131, 23);
             this.BtnExcluirEstoq.TabIndex = 2;
@@ -188,7 +194,7 @@ namespace EstoqueV1
             // 
             // BtnEditEstoq
             // 
-            this.BtnEditEstoq.Location = new System.Drawing.Point(734, 68);
+            this.BtnEditEstoq.Location = new System.Drawing.Point(740, 71);
             this.BtnEditEstoq.Name = "BtnEditEstoq";
             this.BtnEditEstoq.Size = new System.Drawing.Size(131, 23);
             this.BtnEditEstoq.TabIndex = 1;
@@ -198,7 +204,7 @@ namespace EstoqueV1
             // 
             // BtnEstoqNew
             // 
-            this.BtnEstoqNew.Location = new System.Drawing.Point(25, 166);
+            this.BtnEstoqNew.Location = new System.Drawing.Point(31, 169);
             this.BtnEstoqNew.Name = "BtnEstoqNew";
             this.BtnEstoqNew.Size = new System.Drawing.Size(131, 23);
             this.BtnEstoqNew.TabIndex = 0;
@@ -208,6 +214,7 @@ namespace EstoqueV1
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.viewConta);
             this.tabPage1.Controls.Add(this.BtnAddUser);
             this.tabPage1.Controls.Add(this.BtnExcluirUser);
@@ -252,6 +259,7 @@ namespace EstoqueV1
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.BtnSaldo);
             this.tabPage3.Controls.Add(this.BtnCheckQtd);
             this.tabPage3.Controls.Add(this.BtnAttGrafico);
@@ -265,7 +273,7 @@ namespace EstoqueV1
             // 
             // BtnSaldo
             // 
-            this.BtnSaldo.Location = new System.Drawing.Point(18, 199);
+            this.BtnSaldo.Location = new System.Drawing.Point(18, 256);
             this.BtnSaldo.Name = "BtnSaldo";
             this.BtnSaldo.Size = new System.Drawing.Size(131, 26);
             this.BtnSaldo.TabIndex = 2;
@@ -274,7 +282,7 @@ namespace EstoqueV1
             // 
             // BtnCheckQtd
             // 
-            this.BtnCheckQtd.Location = new System.Drawing.Point(18, 111);
+            this.BtnCheckQtd.Location = new System.Drawing.Point(18, 168);
             this.BtnCheckQtd.Name = "BtnCheckQtd";
             this.BtnCheckQtd.Size = new System.Drawing.Size(139, 39);
             this.BtnCheckQtd.TabIndex = 1;
@@ -283,27 +291,17 @@ namespace EstoqueV1
             // 
             // BtnAttGrafico
             // 
-            this.BtnAttGrafico.Location = new System.Drawing.Point(18, 45);
+            this.BtnAttGrafico.Location = new System.Drawing.Point(18, 102);
             this.BtnAttGrafico.Name = "BtnAttGrafico";
             this.BtnAttGrafico.Size = new System.Drawing.Size(139, 23);
             this.BtnAttGrafico.TabIndex = 0;
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
             // 
-            // viewItens
-            // 
-            this.viewItens.HideSelection = false;
-            this.viewItens.Location = new System.Drawing.Point(172, 54);
-            this.viewItens.Name = "viewItens";
-            this.viewItens.Size = new System.Drawing.Size(517, 276);
-            this.viewItens.TabIndex = 6;
-            this.viewItens.TabStop = false;
-            this.viewItens.UseCompatibleStateImageBehavior = false;
-            // 
             // viewEstoque
             // 
             this.viewEstoque.HideSelection = false;
-            this.viewEstoque.Location = new System.Drawing.Point(193, 58);
+            this.viewEstoque.Location = new System.Drawing.Point(199, 61);
             this.viewEstoque.Name = "viewEstoque";
             this.viewEstoque.Size = new System.Drawing.Size(517, 276);
             this.viewEstoque.TabIndex = 7;
@@ -319,6 +317,56 @@ namespace EstoqueV1
             this.viewConta.TabIndex = 3;
             this.viewConta.UseCompatibleStateImageBehavior = false;
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
+            this.lblTitulo.Location = new System.Drawing.Point(375, 13);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(100, 26);
+            this.lblTitulo.TabIndex = 7;
+            this.lblTitulo.Text = "Cadastro";
+            // 
+            // viewItens
+            // 
+            this.viewItens.HideSelection = false;
+            this.viewItens.Location = new System.Drawing.Point(172, 66);
+            this.viewItens.Name = "viewItens";
+            this.viewItens.Size = new System.Drawing.Size(517, 276);
+            this.viewItens.TabIndex = 6;
+            this.viewItens.TabStop = false;
+            this.viewItens.UseCompatibleStateImageBehavior = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
+            this.label1.Location = new System.Drawing.Point(407, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 26);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Estoque";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
+            this.label2.Location = new System.Drawing.Point(335, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(230, 26);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Configuração de conta";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline);
+            this.label3.Location = new System.Drawing.Point(345, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(164, 26);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Dados da conta";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,9 +378,13 @@ namespace EstoqueV1
             this.Text = "Menu";
             this.TabMenu.ResumeLayout(false);
             this.TabCadItem.ResumeLayout(false);
+            this.TabCadItem.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -361,8 +413,12 @@ namespace EstoqueV1
         private System.Windows.Forms.Button BtnAttGrafico;
         private System.Windows.Forms.Button BtnAddUser;
         private System.Windows.Forms.Button btnSaidaItem;
-        private System.Windows.Forms.ListView viewItens;
         private System.Windows.Forms.ListView viewEstoque;
         private System.Windows.Forms.ListView viewConta;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.ListView viewItens;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
