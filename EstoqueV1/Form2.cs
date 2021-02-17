@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< Updated upstream
+=======
+using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
+>>>>>>> Stashed changes
 
 namespace EstoqueV1
 {
@@ -106,6 +111,31 @@ namespace EstoqueV1
 
         private void TabCadItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'db_EstoquesDataSet1.Produtos'. Você pode movê-la ou removê-la conforme necessário.
+            //this.produtosTableAdapter.Fill(this.db_EstoquesDataSet1.Produtos);
+
+            SqlDataAdapter da;
+            BindingSource bsource = new BindingSource();
+            DataSet ds = null;
+            string carregaProdutos;
+
+
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Usuário\Desktop\TrabalhosMestrado\PROGRAMAÇÃO\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
+
+            carregaProdutos = "SELECT IdProduto, Nome, Categoria, Estoque, Fornecedor FROM Produtos";
+            da = new SqlDataAdapter(carregaProdutos, conn);
+            conn.Open();
+            ds = new DataSet();
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(da);
+            da.Fill(ds, "Produtos");
+            bsource.DataSource = ds.Tables["Produtos"];
+            DtgvDadosCad.DataSource = bsource;
+            conn.Close();
 
         }
     }

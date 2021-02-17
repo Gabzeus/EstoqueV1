@@ -18,7 +18,7 @@ namespace EstoqueV1
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Usuário\Desktop\Trabalhos - Mestrado\PROGRAMAÇÃO\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Usuário\Desktop\TrabalhosMestrado\PROGRAMAÇÃO\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cmd;
 
         private void label2_Click(object sender, EventArgs e)
@@ -29,7 +29,27 @@ namespace EstoqueV1
         private void CatCadastro_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'db_EstoquesDataSet1.Produtos'. Você pode movê-la ou removê-la conforme necessário.
-            this.produtosTableAdapter.Fill(this.db_EstoquesDataSet1.Produtos);
+            //this.produtosTableAdapter.Fill(this.db_EstoquesDataSet1.Produtos);
+
+
+            SqlDataAdapter da;
+            BindingSource bsource = new BindingSource();
+            DataSet ds = null;
+            string carregaProdutos;
+
+
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Usuário\Desktop\TrabalhosMestrado\PROGRAMAÇÃO\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
+
+            carregaProdutos = "SELECT IdProduto, Nome, Categoria, Estoque, Fornecedor FROM Produtos";
+            da = new SqlDataAdapter(carregaProdutos, conn);
+            conn.Open();
+            ds = new DataSet();
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(da);
+            da.Fill(ds, "Produtos");
+            bsource.DataSource = ds.Tables["Produtos"];
+            DtgvDadosCad.DataSource = bsource;
+            conn.Close();
+            
 
         }
 
@@ -44,8 +64,7 @@ namespace EstoqueV1
         }
 
         private void DtgvDadosCad_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
+        {      
 
             this.produtosTableAdapter.Fill(this.db_EstoquesDataSet1.Produtos);
         }

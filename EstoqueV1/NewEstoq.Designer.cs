@@ -119,6 +119,7 @@ namespace EstoqueV1
             this.DtgvDadosEstoque.Size = new System.Drawing.Size(330, 113);
             this.DtgvDadosEstoque.TabIndex = 16;
             this.DtgvDadosEstoque.TabStop = false;
+            this.DtgvDadosEstoque.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgvDadosEstoque_CellContentClick);
             // 
             // ColumIdEstoq
             // 

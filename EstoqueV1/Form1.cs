@@ -18,7 +18,11 @@ namespace EstoqueV1
             InitializeComponent();
         }
 
+<<<<<<< Updated upstream
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Curadik\OneDrive\Documents\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
+=======
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;attachdbfilename=C:\Users\Usuário\Desktop\TrabalhosMestrado\PROGRAMAÇÃO\GitHub\EstoqueV1\EstoqueV1\Db_Estoques.mdf;Integrated Security=True;Connect Timeout=30");
+>>>>>>> Stashed changes
         SqlCommand cmd;
         public static string loginEmUso = "";
         

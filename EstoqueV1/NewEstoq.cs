@@ -34,21 +34,26 @@ namespace EstoqueV1
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
-            string criarEstoque = $"CREATE TABLE Estoque1 ([idestoque] INT IDENTITY (0, 1) NOT NULL, [nome] VARCHAR(50) NULL DEFAULT NULL, PRIMARY KEY CLUSTERED ([idestoque] ASC)";
+            //string criarEstoque = $"CREATE TABLE Estoque1 ([idestoque] INT IDENTITY (0, 1) NOT NULL, [nome] VARCHAR(50) NULL DEFAULT NULL, PRIMARY KEY CLUSTERED ([idestoque] ASC)";
 
-            cmd = new SqlCommand(criarEstoque, conn);
+            //cmd = new SqlCommand(criarEstoque, conn);
 
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            //conn.Open();
+            //cmd.ExecuteNonQuery();
+            //conn.Close();
 
-            string criarTabProduto = $"CREATE TABLE 'Produtos' ('idproduto' INT IDENTITY (0,1) NOT NULL, 'nome' VARCHAR(50) NULL DEFAULT NULL, 'quantidade' INT NULL DEFAULT NULL, 'dataEntrada' DATE NULL DEFAULT NULL, 'dataValidade' DATE NULL DEFAULT NULL, 'valor' INT NULL, 'QtdMáxima' INT NULL, 'QtdMínima' INT NULL, PRIMARY KEY CLUSTERED ('idproduto' ASC), FOREIGN KEY ('idestoque')";
+            //string criarTabProduto = $"CREATE TABLE 'Produtos' ('idproduto' INT IDENTITY (0,1) NOT NULL, 'nome' VARCHAR(50) NULL DEFAULT NULL, 'quantidade' INT NULL DEFAULT NULL, 'dataEntrada' DATE NULL DEFAULT NULL, 'dataValidade' DATE NULL DEFAULT NULL, 'valor' INT NULL, 'QtdMáxima' INT NULL, 'QtdMínima' INT NULL, PRIMARY KEY CLUSTERED ('idproduto' ASC), FOREIGN KEY ('idestoque')";
 
-            cmd = new SqlCommand(criarTabProduto, conn);
+            //cmd = new SqlCommand(criarTabProduto, conn);
 
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
-        }    
+            //conn.Open();
+            //cmd.ExecuteNonQuery();
+            //conn.Close();
+        }
+
+        private void DtgvDadosEstoque_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

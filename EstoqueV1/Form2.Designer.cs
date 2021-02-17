@@ -31,9 +31,6 @@ namespace EstoqueV1
         {
             this.components = new System.ComponentModel.Container();
             this.DtgvDadosCad = new System.Windows.Forms.DataGridView();
-            this.ColumId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumQtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnCategoriaNova = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.TabMenu = new System.Windows.Forms.TabControl();
@@ -62,6 +59,21 @@ namespace EstoqueV1
             this.BtnCheckQtd = new System.Windows.Forms.Button();
             this.BtnAttGrafico = new System.Windows.Forms.Button();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.db_EstoquesDataSet1 = new EstoqueV1.Db_EstoquesDataSet1();
+            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.produtosTableAdapter = new EstoqueV1.Db_EstoquesDataSet1TableAdapters.ProdutosTableAdapter();
+            this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoriaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornecedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataValidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.responsávelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtdMinimaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtdMaximaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).BeginInit();
             this.TabMenu.SuspendLayout();
             this.TabCadItem.SuspendLayout();
@@ -71,51 +83,61 @@ namespace EstoqueV1
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_EstoquesDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // DtgvDadosCad
             // 
+            this.DtgvDadosCad.AllowUserToAddRows = false;
+            this.DtgvDadosCad.AllowUserToDeleteRows = false;
+            this.DtgvDadosCad.AllowUserToOrderColumns = true;
+            this.DtgvDadosCad.AutoGenerateColumns = false;
             this.DtgvDadosCad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtgvDadosCad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumId,
-            this.ColumNome,
-            this.ColumQtd});
+            this.idProdutoDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.categoriaDataGridViewTextBoxColumn,
+            this.fornecedorDataGridViewTextBoxColumn,
+            this.estoqueDataGridViewTextBoxColumn,
+            this.quantidadeDataGridViewTextBoxColumn,
+            this.dataEntradaDataGridViewTextBoxColumn,
+            this.dataValidadeDataGridViewTextBoxColumn,
+            this.valorDataGridViewTextBoxColumn,
+            this.responsávelDataGridViewTextBoxColumn,
+            this.qtdMinimaDataGridViewTextBoxColumn,
+            this.qtdMaximaDataGridViewTextBoxColumn});
+            this.DtgvDadosCad.DataSource = this.produtosBindingSource;
             this.DtgvDadosCad.Location = new System.Drawing.Point(171, 73);
             this.DtgvDadosCad.Name = "DtgvDadosCad";
+            this.DtgvDadosCad.ReadOnly = true;
             this.DtgvDadosCad.Size = new System.Drawing.Size(409, 241);
             this.DtgvDadosCad.TabIndex = 0;
             this.DtgvDadosCad.TabStop = false;
             this.DtgvDadosCad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ColumId
-            // 
-            this.ColumId.Frozen = true;
-            this.ColumId.HeaderText = "Id";
-            this.ColumId.Name = "ColumId";
-            // 
-            // ColumNome
-            // 
-            this.ColumNome.HeaderText = "Nome";
-            this.ColumNome.Name = "ColumNome";
-            // 
-            // ColumQtd
-            // 
-            this.ColumQtd.HeaderText = "Quantidade";
-            this.ColumQtd.Name = "ColumQtd";
             // 
             // BtnCategoriaNova
             // 
             this.BtnCategoriaNova.Location = new System.Drawing.Point(626, 73);
             this.BtnCategoriaNova.Name = "BtnCategoriaNova";
             this.BtnCategoriaNova.Size = new System.Drawing.Size(131, 23);
+<<<<<<< Updated upstream
             this.BtnCategoriaNova.TabIndex = 2;
             this.BtnCategoriaNova.Text = "&Cadastrar item";
+=======
+            this.BtnCategoriaNova.TabIndex = 0;
+            this.BtnCategoriaNova.Text = "&Cadastrar produto";
+>>>>>>> Stashed changes
             this.BtnCategoriaNova.UseVisualStyleBackColor = true;
             this.BtnCategoriaNova.Click += new System.EventHandler(this.BtnCategoriaNova_Click);
             // 
             // btnEditar
             // 
+<<<<<<< Updated upstream
             this.btnEditar.Location = new System.Drawing.Point(626, 204);
+=======
+            this.btnEditar.Location = new System.Drawing.Point(18, 132);
+>>>>>>> Stashed changes
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(131, 23);
             this.btnEditar.TabIndex = 4;
@@ -149,13 +171,17 @@ namespace EstoqueV1
             this.TabCadItem.Padding = new System.Windows.Forms.Padding(3);
             this.TabCadItem.Size = new System.Drawing.Size(976, 547);
             this.TabCadItem.TabIndex = 0;
-            this.TabCadItem.Text = "Cadastro item";
+            this.TabCadItem.Text = "Produtos";
             this.TabCadItem.UseVisualStyleBackColor = true;
             this.TabCadItem.Click += new System.EventHandler(this.TabCadItem_Click);
             // 
             // btnSaidaItem
             // 
+<<<<<<< Updated upstream
             this.btnSaidaItem.Location = new System.Drawing.Point(30, 151);
+=======
+            this.btnSaidaItem.Location = new System.Drawing.Point(630, 85);
+>>>>>>> Stashed changes
             this.btnSaidaItem.Name = "btnSaidaItem";
             this.btnSaidaItem.Size = new System.Drawing.Size(131, 23);
             this.btnSaidaItem.TabIndex = 1;
@@ -380,6 +406,104 @@ namespace EstoqueV1
             this.BtnAttGrafico.Text = "&Atualizar grafico";
             this.BtnAttGrafico.UseVisualStyleBackColor = true;
             // 
+            // db_EstoquesDataSet1
+            // 
+            this.db_EstoquesDataSet1.DataSetName = "Db_EstoquesDataSet1";
+            this.db_EstoquesDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // produtosBindingSource
+            // 
+            this.produtosBindingSource.DataMember = "Produtos";
+            this.produtosBindingSource.DataSource = this.db_EstoquesDataSet1;
+            // 
+            // produtosTableAdapter
+            // 
+            this.produtosTableAdapter.ClearBeforeFill = true;
+            // 
+            // idProdutoDataGridViewTextBoxColumn
+            // 
+            this.idProdutoDataGridViewTextBoxColumn.DataPropertyName = "IdProduto";
+            this.idProdutoDataGridViewTextBoxColumn.HeaderText = "IdProduto";
+            this.idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
+            this.idProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoriaDataGridViewTextBoxColumn
+            // 
+            this.categoriaDataGridViewTextBoxColumn.DataPropertyName = "Categoria";
+            this.categoriaDataGridViewTextBoxColumn.HeaderText = "Categoria";
+            this.categoriaDataGridViewTextBoxColumn.Name = "categoriaDataGridViewTextBoxColumn";
+            this.categoriaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fornecedorDataGridViewTextBoxColumn
+            // 
+            this.fornecedorDataGridViewTextBoxColumn.DataPropertyName = "Fornecedor";
+            this.fornecedorDataGridViewTextBoxColumn.HeaderText = "Fornecedor";
+            this.fornecedorDataGridViewTextBoxColumn.Name = "fornecedorDataGridViewTextBoxColumn";
+            this.fornecedorDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // estoqueDataGridViewTextBoxColumn
+            // 
+            this.estoqueDataGridViewTextBoxColumn.DataPropertyName = "Estoque";
+            this.estoqueDataGridViewTextBoxColumn.HeaderText = "Estoque";
+            this.estoqueDataGridViewTextBoxColumn.Name = "estoqueDataGridViewTextBoxColumn";
+            this.estoqueDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantidadeDataGridViewTextBoxColumn
+            // 
+            this.quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
+            this.quantidadeDataGridViewTextBoxColumn.HeaderText = "Quantidade";
+            this.quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
+            this.quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataEntradaDataGridViewTextBoxColumn
+            // 
+            this.dataEntradaDataGridViewTextBoxColumn.DataPropertyName = "DataEntrada";
+            this.dataEntradaDataGridViewTextBoxColumn.HeaderText = "DataEntrada";
+            this.dataEntradaDataGridViewTextBoxColumn.Name = "dataEntradaDataGridViewTextBoxColumn";
+            this.dataEntradaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataValidadeDataGridViewTextBoxColumn
+            // 
+            this.dataValidadeDataGridViewTextBoxColumn.DataPropertyName = "DataValidade";
+            this.dataValidadeDataGridViewTextBoxColumn.HeaderText = "DataValidade";
+            this.dataValidadeDataGridViewTextBoxColumn.Name = "dataValidadeDataGridViewTextBoxColumn";
+            this.dataValidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // valorDataGridViewTextBoxColumn
+            // 
+            this.valorDataGridViewTextBoxColumn.DataPropertyName = "Valor";
+            this.valorDataGridViewTextBoxColumn.HeaderText = "Valor";
+            this.valorDataGridViewTextBoxColumn.Name = "valorDataGridViewTextBoxColumn";
+            this.valorDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // responsávelDataGridViewTextBoxColumn
+            // 
+            this.responsávelDataGridViewTextBoxColumn.DataPropertyName = "Responsável";
+            this.responsávelDataGridViewTextBoxColumn.HeaderText = "Responsável";
+            this.responsávelDataGridViewTextBoxColumn.Name = "responsávelDataGridViewTextBoxColumn";
+            this.responsávelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // qtdMinimaDataGridViewTextBoxColumn
+            // 
+            this.qtdMinimaDataGridViewTextBoxColumn.DataPropertyName = "QtdMinima";
+            this.qtdMinimaDataGridViewTextBoxColumn.HeaderText = "QtdMinima";
+            this.qtdMinimaDataGridViewTextBoxColumn.Name = "qtdMinimaDataGridViewTextBoxColumn";
+            this.qtdMinimaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // qtdMaximaDataGridViewTextBoxColumn
+            // 
+            this.qtdMaximaDataGridViewTextBoxColumn.DataPropertyName = "QtdMaxima";
+            this.qtdMaximaDataGridViewTextBoxColumn.HeaderText = "QtdMaxima";
+            this.qtdMaximaDataGridViewTextBoxColumn.Name = "qtdMaximaDataGridViewTextBoxColumn";
+            this.qtdMaximaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,7 +512,12 @@ namespace EstoqueV1
             this.Controls.Add(this.TabMenu);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+<<<<<<< Updated upstream
             this.Text = "Menu";
+=======
+            this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosCad)).EndInit();
             this.TabMenu.ResumeLayout(false);
             this.TabCadItem.ResumeLayout(false);
@@ -398,6 +527,8 @@ namespace EstoqueV1
             ((System.ComponentModel.ISupportInitialize)(this.DtgvDadosUser)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_EstoquesDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,12 +560,24 @@ namespace EstoqueV1
         private System.Windows.Forms.Button BtnAttGrafico;
         private System.Windows.Forms.Button BtnAddUser;
         private System.Windows.Forms.Button btnSaidaItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumQtd;
         private System.Windows.Forms.DataGridView DtgvDadosUser;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumIdEstoq;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumTipoEstoq;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumNomeEstoq;
+        private Db_EstoquesDataSet1 db_EstoquesDataSet1;
+        private System.Windows.Forms.BindingSource produtosBindingSource;
+        private Db_EstoquesDataSet1TableAdapters.ProdutosTableAdapter produtosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoriaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornecedorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estoqueDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataEntradaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataValidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn responsávelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qtdMinimaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qtdMaximaDataGridViewTextBoxColumn;
     }
 }
